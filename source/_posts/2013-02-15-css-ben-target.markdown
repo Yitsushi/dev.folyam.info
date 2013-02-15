@@ -26,7 +26,7 @@ Persze sok más helyen is hasznos tud lenni, de itt különösképpen :)
 
 ### Egy gyors példa
 
-Vegyünk akkor egy egyszerű oldalt, amin van 4 rejezetünk.
+Vegyünk akkor egy egyszerű oldalt, amin van 4 fejezetünk.
 
 {% include_code 2013-02-15-css-ben-target/index.html %}
 
