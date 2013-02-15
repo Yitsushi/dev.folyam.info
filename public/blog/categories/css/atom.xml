@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[[Dev] Folyam.info]]></title>
-  <link href="http://dev.folyam.info/atom.xml" rel="self"/>
+  <title><![CDATA[Category: css | [Dev] Folyam.info]]></title>
+  <link href="http://dev.folyam.info/blog/categories/css/atom.xml" rel="self"/>
   <link href="http://dev.folyam.info/"/>
   <updated>2013-02-15T18:48:28+01:00</updated>
   <id>http://dev.folyam.info/</id>
@@ -20,7 +20,7 @@
     <id>http://dev.folyam.info/blog/2013/02/15/css-ben-target</id>
     <content type="html"><![CDATA[<p><img class="center" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-15-css-ben-target/gold.png"></p>
 
-<p>Egy css tulajdonság&#8230; Ami megváltoztat mindent?
+<p>Egy css tulajdonság... Ami megváltoztat mindent?
 Mi is ez? Egészen pontosan a böngésző <code>location.hash</code> részét vizsgálja.
 Ha elhelyezünk horgonyokat, akkor állíthatunk be #css tulajdonságot arra,
 ha az éppen célozva van.</p>
@@ -41,7 +41,7 @@ látszódjon.</p>
 
 <p>Vegyünk akkor egy egyszerű oldalt, amin van 4 rejezetünk.</p>
 
-<figure class='code'><figcaption><span> (index.html)</span> <a href='http://dev.folyam.info/downloads/code/2013-02-15-css-ben-target/index.html'>download</a></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (index.html)</span> <a href='/downloads/code/2013-02-15-css-ben-target/index.html'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -176,13 +176,12 @@ látszódjon.</p>
 </span><span class='line'>  <span class="nt">&lt;/section&gt;</span>
 </span><span class='line'><span class="nt">&lt;/body&gt;</span>
 </span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Most jön a lényegi rész. Először is a CSS-ben megadunk pár alap dolgot, amit
 ami csak annyit tesz, hogy ki is nézzen valahogy. Nem a legszebb, de legalább van arca.</p>
 
-<figure class='code'><figcaption><span> (app.css)</span> <a href='http://dev.folyam.info/downloads/code/2013-02-15-css-ben-target/app.css'>download</a></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (app.css)</span> <a href='/downloads/code/2013-02-15-css-ben-target/app.css'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -417,70 +416,60 @@ ami csak annyit tesz, hogy ki is nézzen valahogy. Nem a legszebb, de legalább 
 </span><span class='line'>    <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">04</span><span class="p">);</span>
 </span><span class='line'>    <span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">04</span><span class="p">);</span>
 </span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>A lényegi rész pedig az alja <em>(hol máshol lenne)</em>, ahol megadtuk a tulajdonságokat
 <code>:target</code> esetén.</p>
 
-<figure class='code'><figcaption><span>A fontos rész, azaz a :target használata</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">section</span> <span class="nt">article</span><span class="nd">:target</span> <span class="nt">header</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">color</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">font-size</span><span class="o">:</span> <span class="m">1.3em</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">section</span> <span class="nt">article</span><span class="nd">:target</span> <span class="nt">header</span> <span class="nt">a</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">color</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">section</span> <span class="nt">article</span><span class="nd">:target</span> <span class="nt">header</span> <span class="nt">h2</span><span class="nd">:before</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">color</span><span class="o">:</span> <span class="m">#777</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">section</span> <span class="nt">article</span><span class="nd">:target</span> <span class="nt">p</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">section</span> <span class="nt">article</span><span class="nd">:target</span> <span class="o">+</span> <span class="nt">article</span> <span class="nt">p</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">section</span> <span class="nt">article</span><span class="nd">:target</span> <span class="o">+</span> <span class="nt">article</span> <span class="p">{</span>
-</span><span class='line'>    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">04</span><span class="p">);</span>
-</span><span class='line'>    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">04</span><span class="p">);</span>
-</span><span class='line'>    <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">04</span><span class="p">);</span>
-</span><span class='line'>    <span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">04</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
+<p>``` css A fontos rész, azaz a :target használata
+section article:target header {</p>
 
+<pre><code>color: black;
+font-size: 1.3em;
+</code></pre>
 
-<p>A teljes kód működés közben: <a href="http://dev.folyam.info/downloads/code/2013-02-15-css-ben-target/index.html#a3">Merre?</a></p>
+<p>}</p>
+
+<p>section article:target header a {</p>
+
+<pre><code>color: black;
+</code></pre>
+
+<p>}</p>
+
+<p>section article:target header h2:before {</p>
+
+<pre><code>color: #777;
+</code></pre>
+
+<p>}</p>
+
+<p>section article:target p {</p>
+
+<pre><code>display: block;
+</code></pre>
+
+<p>}</p>
+
+<p>section article:target + article p {</p>
+
+<pre><code>display: block;
+</code></pre>
+
+<p>}</p>
+
+<p>section article:target + article {</p>
+
+<pre><code>-webkit-transform: scale(1.04);
+-moz-transform: scale(1.04);
+-o-transform: scale(1.04);
+transform: scale(1.04);
+</code></pre>
+
+<p>}
+```</p>
+
+<p>A teljes kód működés közben: <a href="/downloads/code/2013-02-15-css-ben-target/index.html#a3">Merre?</a></p>
 
 <h3>Milyen lehet egy ilyen Popup megoldás?</h3>
 
@@ -494,96 +483,7 @@ hash-re)</em>, akkor feljön a popup css-ből, de be bírja zárni.</p>
 <p>Te milyen felhasználási területet látsz benne?
 Milyen eset volt már, amikor ez nagyon hasznos lett volna?</p>
 
-<blockquote><p>Ez jó! Pl: ha egy adott kommentetre mutató linkre érkezik valaki,<br/>azt ki lehet emelni vele. Eddig ehhez js kellett.</p><footer><strong>Robert Cartman</strong> <cite><a href='https://plus.google.com/u/0/104695723888883478740/posts/DnFkp5RJqPP'>Google+</a></cite></footer></blockquote>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Röviden tömören]]></title>
-    <link href="http://dev.folyam.info/blog/2013/02/15/roviden-tomoren/"/>
-    <updated>2013-02-15T15:09:00+01:00</updated>
-    <id>http://dev.folyam.info/blog/2013/02/15/roviden-tomoren</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-15-roviden-tomoren/where-everything-begins.jpeg" width="240" title="omg" alt="omg2"></p>
-
-<p>Sokkal tartozom nektek, mert jó pár dolog volt, amire mondtam, hogy írok róla, csak majd később.
-Erőt vettem magamon és miután rájöttem, hogy soha nem lesz időm ennyi videótartalom legyártásához,
-úgy döntöttem inkább megosztom, mint szöveges tartalom. Aztán majd egyszer lesz hozzá videó is. Vagy nem.
-Ez a poszt meg csak azért van, hogy lássam egyáltalán működik-e így :)</p>
-
-<p>Tehát kell először is egy <code>inline: code</code>, mert azt gyakran használom.</p>
-
-<pre><code>Kell egy pre :) Egyszerű dolgokhoz.
-</code></pre>
-
-<p>De ugye ez nem elég, ha programozni akarok ^<sup>.</sup></p>
-
-<!--more-->
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Ez ilyen egy
-</span><span class='line'>számozott kód
-</span><span class='line'>nyelv megadása nélkül</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Jó volna megadni, hogy mi a nyelv, hogy tudja hogyan kell kiemelni a kódot.</p>
-
-<figure class='code'><figcaption><span>Egy egyszerű alap</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">core</span><span class="o">:</span> <span class="p">{},</span>
-</span><span class='line'>  <span class="nx">utils</span><span class="o">:</span> <span class="p">{},</span>
-</span><span class='line'>  <span class="nx">modules</span><span class="o">:</span> <span class="p">{}</span>
-</span><span class='line'><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span>Simán egy funkció, ami kvázi semmit se csinál</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
-</span><span class='line'><span class="k">function</span> <span class="nf">myFirstMethod</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>De akár file is megadható?</p>
-
-<figure class='code'><figcaption><span>Alap struktúra (index.html)</span> <a href='http://dev.folyam.info/downloads/code/2013-02-15-roviden-tomoren/index.html'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
-</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en-US&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;head&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
-</span><span class='line'><span class="nt">&lt;/head&gt;</span>
-</span><span class='line'><span class="nt">&lt;body&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;h1&gt;</span>Oh Yeah! Ezt már szeretem :)<span class="nt">&lt;/h1&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<p><blockquote><p>Ez jó! Pl: ha egy adott kommentetre mutató linkre érkezik valaki,<br/>azt ki lehet emelni vele. Eddig ehhez js kellett.</p><footer><strong>Robert Cartman</strong> <cite><a href='https://plus.google.com/u/0/104695723888883478740/posts/DnFkp5RJqPP'>Google+</a></cite></footer></blockquote></p>
 ]]></content>
   </entry>
   
