@@ -7,7 +7,7 @@ title: "[Dev] Folyam.info"
 subtitle: "Elsősorban a programozói oldalam magyarul."
 author: "Balazs Nadasdi"
 simple_search: "http://google.com/search"
-description:
+description: "Programozás, hogyan ígértem. Magyar tartalom, hogy fejlődjön a magyar fejlesztő is valahogy."
 lang: "hu"
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
