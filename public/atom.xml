@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[[Dev] Folyam.info]]></title>
+  <link href="http://dev.folyam.info/atom.xml" rel="self"/>
+  <link href="http://dev.folyam.info/"/>
+  <updated>2013-02-15T17:46:02+01:00</updated>
+  <id>http://dev.folyam.info/</id>
+  <author>
+    <name><![CDATA[Balazs Nadasdi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Röviden tömören]]></title>
+    <link href="http://dev.folyam.info/blog/2013/02/15/roviden-tomoren/"/>
+    <updated>2013-02-15T15:09:00+01:00</updated>
+    <id>http://dev.folyam.info/blog/2013/02/15/roviden-tomoren</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-15-roviden-tomoren/where-everything-begins.jpeg" width="240" title="omg" alt="omg2"></p>
+
+<p>Sokkal tartozom nektek, mert jó pár dolog volt, amire mondtam, hogy írok róla, csak majd később.
+Erőt vettem magamon és miután rájöttem, hogy soha nem lesz időm ennyi videótartalom legyártásához,
+úgy döntöttem inkább megosztom, mint szöveges tartalom. Aztán majd egyszer lesz hozzá videó is. Vagy nem.
+Ez a poszt meg csak azért van, hogy lássam egyáltalán működik-e így :)</p>
+
+<p>Tehát kell először is egy <code>inline: code</code>, mert azt gyakran használom.</p>
+
+<pre><code>Kell egy pre :) Egyszerű dolgokhoz.
+</code></pre>
+
+<p>De ugye ez nem elég, ha programozni akarok ^<sup>.</sup></p>
+
+<!--more-->
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Ez ilyen egy
+</span><span class='line'>számozott kód
+</span><span class='line'>nyelv megadása nélkül</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jó volna megadni, hogy mi a nyelv, hogy tudja hogyan kell kiemelni a kódot.</p>
+
+<figure class='code'><figcaption><span>Egy egyszerű alap</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">core</span><span class="o">:</span> <span class="p">{},</span>
+</span><span class='line'>  <span class="nx">utils</span><span class="o">:</span> <span class="p">{},</span>
+</span><span class='line'>  <span class="nx">modules</span><span class="o">:</span> <span class="p">{}</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Simán egy funkció, ami kvázi semmit se csinál</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
+</span><span class='line'><span class="k">function</span> <span class="nf">myFirstMethod</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>De akár file is megadható?</p>
+
+<figure class='code'><figcaption><span>Alap struktúra (index.html)</span> <a href='http://dev.folyam.info/downloads/code/2013-02-15-roviden-tomoren/index.html'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en-US&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;h1&gt;</span>Oh Yeah! Ezt már szeretem :)<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+</feed>
