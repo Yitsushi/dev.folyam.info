@@ -10,16 +10,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .ad-left, .ad-right {
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 4px;
+  margin-top: 8px;
 }
 
 .ad-left {
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .ad-right {
   float: right;
-  margin-left: 10px;
+  margin-left: 15px;
 }
