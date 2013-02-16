@@ -17,8 +17,8 @@ lang: "hu"
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
-subscribe_email:
+subscribe_rss: http://feeds.feedburner.com/devFolyaminfo
+subscribe_email: http://feedburner.google.com/fb/a/mailverify?uri=devFolyaminfo&loc=hu_HU
 # RSS feeds can list your email address if you like
 email:
 
@@ -43,6 +43,9 @@ recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Bővebben &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to titlecase
+
+category_title_prefix: "Kategória: "
+category_meta_description_prefix: "Kategória: "
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
