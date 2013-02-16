@@ -109,14 +109,14 @@ sem fog elmenteni sehova. A második részben alá pakolunk &hellip;">
 <div class="entry-content"><p><img class="left" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-16-url-rovidito-1-resz/AngularJS-hogyan.png" title="&#34;AngularJS Hogyan&#34;" alt="&#34;AngularJS Hogyan&#34;"></p>
 
 <p>Most készíteni fogunk egy URL rövidítő oldalt. Az első részben csak offline lesz és semmit
-sem fog elmenteni sehova. A második részben alá pakolunk egy szerver oldali réteget, hogy
+sem fog elmenteni sehova. A második részben alá pakolunk egy szerveroldali réteget, hogy
 amit berakunk URL-eket, azokat mentse is el valahova.</p>
 
 <p>Kezdjük a legelején. Mit fogunk használni? <a href="http://angularjs.org/">AngularJS</a>
-fogja kezelni a kliens oldali részt. Ez fog ügyelni arra, hogy minden adat a helyén legyen.
+fogja kezelni a kliensoldali részt. Ez fog ügyelni arra, hogy minden adat a helyén legyen.
 Először ezt állítjuk hadrendbe. Persze jó volna egyből alá rakni egy
 <a href="http://nodejs.org/">Node.js</a> keretet, hogy később ne kelljen túlzottan mozgatni a
-dolgokat, de ezt mi most nem tesszük meg. Most csak a kliens oldali résszel foglalkozunk.
+dolgokat, de ezt mi most nem tesszük meg. Most csak a kliensoldali résszel foglalkozunk.
 Amúgy sem kell sokat mozgatni és átírni hozzá.</p>
 
 <!--more-->
@@ -125,7 +125,7 @@ Amúgy sem kell sokat mozgatni és átírni hozzá.</p>
 <p>A következő felvonásban alá rakjuk a már emlegetett Node.js-t és adatbázisként
 <a href="http://www.mongodb.org/">MongoDB</a>-t fogunk használni. Természetesen mással is használható,
 de jelenleg én ehhez csinálom a cikket és ezt használom. Minden későbbi fejezet attól függ,
-hogy mi az igény és/vagy meg mire lesz kedvem.</p>
+hogy mi az igény és/vagy még mire lesz kedvem.</p>
 
 <h3>HTML struktúra</h3>
 
@@ -213,7 +213,7 @@ tartalmazza, hogy mit csinál az oldal. A mi saját kódunk.</p>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&#39;App.controllers.Link&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="c">&lt;!-- egyéb --&gt;</span>
+</span><span class='line'>  <span class="c">&lt;!-- egyéb kód --&gt;</span>
 </span><span class='line'><span class="nt">&lt;/div&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -223,7 +223,7 @@ kontroller. Jelen esetben a <code>Link</code> kontroller. Az <code>App.controlle
 specifikus, hanem én így különítem el a kód bizonyos részeit, ami most ugye a kontroller.</p>
 
 <p>A kontroller fog cselekedni. Ez mondja meg, hogy mit kell csinálni. Itt adhatunk meg
-társításokat <code>data bind</code>, amikkel adott mező értékét össze tudjuk kötni változókkal,
+társításokat (<code>data bind</code>), amikkel adott mező értékét össze tudjuk kötni változókkal,
 vagy épp függvényekkel. Azok a függvények lesznek eléthetőek <em>(mondjuk)</em> a <code>view</code> számára,
 amiket itt megmondunk, hogy elérhet.</p>
 
@@ -240,6 +240,23 @@ amiket itt megmondunk, hogy elérhet.</p>
 </span><span class='line'>  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;add&quot;</span><span class="nt">&gt;</span>
 </span><span class='line'><span class="nt">&lt;/form&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<div class='ad-left'>
+  <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-4870755332408030";
+    /* DevFolyamArticle */
+    google_ad_slot = "1829466906";
+    google_ad_width = 300;
+    google_ad_height = 250;
+  //-->
+  </script>
+  <script type="text/javascript"
+          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+</div>
 
 
 <p>Ezek után találkozunk egy űrlappal, amiben egy sima <code>text</code> típusú mező és egy <code>submit</code>
@@ -267,9 +284,9 @@ kontrollerben megadottak szerint <em>(hamarosan)</em>.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Ezek után egy sima táblázatot látunk azzal az egy különbséggel, hogy a fejléc után a <code>tr</code>
-kapott egy <code>ng-repeat</code>-et. Ez amolyan <code>forEach</code> azzal a különbséggel, hogy nem a benne
-találhatóakat ismétni, hanem önmagát az elemet is. Tehát jelen esetben a
+<p>Ezek után egy sima táblázatot látunk, ami talán abban tér el a megszokottól, hogy a fejléc
+után a <code>tr</code> kapott egy <code>ng-repeat</code>-et. Ez amolyan <code>forEach</code> azzal a különbséggel, hogy nem
+a benne találhatóakat ismétli, hanem önmagát az elemet is. Tehát jelen esetben a
 <em>(kontrollerben meghatározott)</em> <code>links</code> tömb minden elemén végighaladunk és minden elemre
 a cikluson belül <code>link</code> néven akarunk hivatkozni.</p>
 
@@ -278,7 +295,7 @@ két kapcsoszárójelbe rakva pakolunk ki tartalmat a böngészőbe.</p>
 
 <h3>JavaScript: AngularJS</h3>
 
-<p>Most jön a lényegi rész. Eddig csak firkáltunk. a lapunk nem csinált semmit és még hülyén
+<p>Most jön a lényegi rész. Eddig csak firkáltunk, a lapunk nem csinált semmit és még hülyén
 is nézett ki. Varázsoljunk rá mozgást.</p>
 
 <figure class='code'><figcaption><span>AngularJS alkalmazásunk (app.js)</span> <a href='/downloads/code/2013-02-16-url-rovidito-1-resz/javascripts/app.js'>download</a></figcaption>
@@ -353,12 +370,29 @@ is nézett ki. Varázsoljunk rá mozgást.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
+
+
+<div class='ad-right'>
+  <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-4870755332408030";
+    /* DevFolyamArticle */
+    google_ad_slot = "1829466906";
+    google_ad_width = 300;
+    google_ad_height = 250;
+  //-->
+  </script>
+  <script type="text/javascript"
+          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+</div>
+
+
 <p>Akkor most bontsuk szét. Először is találunk egy <code>App</code> objektumot, amibe pakoltunk egy
 üres <code>controllers</code> objektumot. Ez lesz majd a kontrollerek helye. Ismétlem nem kell így
 csinálni, de én így látom át igazán. Mindennek meg kell lennie a helyének :) Továbbá
 található benne egy <code>utils</code> és egy <code>configuration</code> objektum. Előbbibe pakoljuk majd azokat
-a kódjainkat, amik segítenek nekünk, mint például az URL generáló. Utóbbiba pedig az URL képzéséhez használt adatok vannak,
-mint például a domian és protocol.</p>
+a kódjainkat, amik segítenek nekünk, mint például az URL generáló.
+Utóbbiban pedig az URL képzéséhez használt adatok vannak, mint például a domain és a protocol.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -377,7 +411,7 @@ mint például a domian és protocol.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Ez egy rém egyszerű függvény, ami kap egy <code>path</code> értéket, és elé dobja az URL statikus
+<p>Ez egy rém egyszerű függvény, ami kap egy <code>path</code> értéket, és elédobja az URL statikus
 részét. Nagyjából mindent be szoktam zárni egy függvénybe, hogy csak ahhoz férjen hozzá,
 amihez én akarom és belőle is csak az látszódjon, amit én akarok, hogy lássanak belőle.</p>
 
@@ -392,14 +426,14 @@ amihez én akarom és belőle is csak az látszódjon, amit én akarok, hogy lá
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Itt két dolgot csinálunk mégis egyet. Először is létrehozunk egy kontrollert, ami a már
+<p>Itt két dolgot csinálunk, mégis egyet. Először is létrehozunk egy kontrollert, ami a már
 jól ismert <code>App.controllers.Link</code> címen lesz elérhető. Egyetlen paramétere a <code>$scope</code>, mert
-most még mást nem használunk. Ami a <code>$scope</code> alá bekerül, az fog látszódni a <code>view</code>-ban is.
-Tehát itt fogjuk majd létrehozni a <code>links</code> tömböt és az <code>addLink</code> függvényt. Az utána lévő
-sor megadja, hogy mik a paraméterei a kontrollerünknek, mert ha tömörírjük a végén a
-JavaScript kódot, akkor nem fogja tudni an AngularJS, hogy mi a neve a változónak. Érdekes
-elgondolás, hogy a változó neve alapján adja meg, a paraméter értékét, de így nagyon
-kényelmes.</p>
+most még mást nem használunk. Ami a <code>$scope</code> alá bekerül <em>(tulajdonsága)</em>, az fog látszódni
+a <code>view</code>-ban is. Tehát itt fogjuk majd létrehozni a <code>links</code> tömböt és az <code>addLink</code> függvényt.
+Az utána lévő sor megadja, hogy mik a paraméterei a kontrollerünknek, mert ha tömörítjük a
+végén a JavaScript kódot, akkor nem fogja tudni az AngularJS, hogy mi a neve a változónak.
+Érdekes elgondolás, hogy a változó neve alapján adja meg a paraméter értékét és nem a
+paraméterek sorrendje számít, de így nagyon kényelmes.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -430,20 +464,38 @@ kényelmes.</p>
 
 <p>Legyen akkor a <code>$scope</code> alatt egy <code>links</code> tömb, ami alapértelmezetten üres. A következő
 részben majd letöltjük a szerverről induláskor a már meglévőket. Ezek után létrehozzuk az
-<code>addLink</code> függvényt, ami ugyebát az űrlapunk <code>onSubmit</code> eseményére hívódik meg. Az egyész
-egy egyszerű tömb művelettel indul, mindhogy egy objektumot betolunk a <code>links</code> tömbbünk
+<code>addLink</code> függvényt, ami ugyebát az űrlapunk <code>onSubmit</code> eseményére hívódik meg. Az egész
+egy egyszerű tömbművelettel indul, minthogy egy objektumot betolunk a <code>links</code> tömbünk
 elejére. A tömb tulajdonságai ugyebár a <code>short</code>, amit az <code>App.utils.url.get</code> függvénye
 ad vissza, a <code>long</code> az a megadott linkünk. A <code>clicks</code> jelenleg teljesen mindegy, simán
 nullára állítjuk. A <code>created_at</code> mező meg csak azért van, hogy tudjuk mikor lett
 létrehozva így felveszi az aktuális időt értéknek. Ezek után kitöröljük a <code>newLink</code>
 értékét.</p>
 
+<div class='ad-right'>
+  <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-4870755332408030";
+    /* DevFolyamArticle */
+    google_ad_slot = "1829466906";
+    google_ad_width = 300;
+    google_ad_height = 250;
+  //-->
+  </script>
+  <script type="text/javascript"
+          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+</div>
+
+
+<p>Mivel a tömbünk össze lett kapcsolva az <code>ng-repeat</code> használata során a táblázattal, így
+ha változik a tömb, akkor frissíti a táblázat sorait.</p>
+
 <p>Nem túl érdekes a link generálása, mert most statikusan minden URL végére ugyan azt
 fogja tenni. Amiért nem törtem magam rajta, az azért van, mert ez úgyis a szerver oldalon
 fog generálódni.</p>
 
 <p>Van benne egy hivatkozás, ami furcsa lehet – még a többihez képest is – mégpedig önmaga
-a <code>newLink</code>. Ugyemár mondtam, hogy a kontrollerben megadott változókhoz fér hozzá a <code>view</code>.
+a <code>newLink</code>. Ugye már mondtam, hogy a kontrollerben megadott változókhoz fér hozzá a <code>view</code>.
 Viszont, ha <code>ng-model</code> segítségével megadok egy változót, ám az nem létezik, akkor
 létrehozza nekünk a <code>$scope</code> alatt.</p>
 

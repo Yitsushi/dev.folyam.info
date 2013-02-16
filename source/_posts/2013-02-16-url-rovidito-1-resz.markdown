@@ -9,14 +9,14 @@ categories: [hogyan, javascript, angularjs, html]
 {% img left http://dev.folyam.info.s3.amazonaws.com/2013-02-16-url-rovidito-1-resz/AngularJS-hogyan.png "AngularJS Hogyan" %}
 
 Most készíteni fogunk egy URL rövidítő oldalt. Az első részben csak offline lesz és semmit
-sem fog elmenteni sehova. A második részben alá pakolunk egy szerver oldali réteget, hogy
+sem fog elmenteni sehova. A második részben alá pakolunk egy szerveroldali réteget, hogy
 amit berakunk URL-eket, azokat mentse is el valahova.
 
 Kezdjük a legelején. Mit fogunk használni? [AngularJS](http://angularjs.org/)
-fogja kezelni a kliens oldali részt. Ez fog ügyelni arra, hogy minden adat a helyén legyen.
+fogja kezelni a kliensoldali részt. Ez fog ügyelni arra, hogy minden adat a helyén legyen.
 Először ezt állítjuk hadrendbe. Persze jó volna egyből alá rakni egy
 [Node.js](http://nodejs.org/) keretet, hogy később ne kelljen túlzottan mozgatni a
-dolgokat, de ezt mi most nem tesszük meg. Most csak a kliens oldali résszel foglalkozunk.
+dolgokat, de ezt mi most nem tesszük meg. Most csak a kliensoldali résszel foglalkozunk.
 Amúgy sem kell sokat mozgatni és átírni hozzá.
 
 <!--more-->
@@ -24,7 +24,7 @@ Amúgy sem kell sokat mozgatni és átírni hozzá.
 A következő felvonásban alá rakjuk a már emlegetett Node.js-t és adatbázisként
 [MongoDB](http://www.mongodb.org/)-t fogunk használni. Természetesen mással is használható,
 de jelenleg én ehhez csinálom a cikket és ezt használom. Minden későbbi fejezet attól függ,
-hogy mi az igény és/vagy meg mire lesz kedvem.
+hogy mi az igény és/vagy még mire lesz kedvem.
 
 ### HTML struktúra
 
@@ -44,7 +44,7 @@ tartalmazza, hogy mit csinál az oldal. A mi saját kódunk.
 
 ``` html
 <div ng-controller='App.controllers.Link'>
-  <!-- egyéb -->
+  <!-- egyéb kód -->
 </div>
 ```
 
@@ -53,7 +53,7 @@ kontroller. Jelen esetben a `Link` kontroller. Az `App.controllers` nem AngularJ
 specifikus, hanem én így különítem el a kód bizonyos részeit, ami most ugye a kontroller.
 
 A kontroller fog cselekedni. Ez mondja meg, hogy mit kell csinálni. Itt adhatunk meg
-társításokat `data bind`, amikkel adott mező értékét össze tudjuk kötni változókkal,
+társításokat (`data bind`), amikkel adott mező értékét össze tudjuk kötni változókkal,
 vagy épp függvényekkel. Azok a függvények lesznek eléthetőek _(mondjuk)_ a `view` számára,
 amiket itt megmondunk, hogy elérhet.
 
@@ -65,6 +65,8 @@ amiket itt megmondunk, hogy elérhet.
   <input type="submit" value="add">
 </form>
 ```
+
+{% include post/adsense_left.html %}
 
 Ezek után találkozunk egy űrlappal, amiben egy sima `text` típusú mező és egy `submit`
 gomb található. A `form` rendelkezik egy `ng-submit` tulajdonsággal, aminek az értéke
@@ -85,9 +87,9 @@ kontrollerben megadottak szerint _(hamarosan)_.
 </tr>
 ```
 
-Ezek után egy sima táblázatot látunk azzal az egy különbséggel, hogy a fejléc után a `tr`
-kapott egy `ng-repeat`-et. Ez amolyan `forEach` azzal a különbséggel, hogy nem a benne
-találhatóakat ismétni, hanem önmagát az elemet is. Tehát jelen esetben a
+Ezek után egy sima táblázatot látunk, ami talán abban tér el a megszokottól, hogy a fejléc
+után a `tr` kapott egy `ng-repeat`-et. Ez amolyan `forEach` azzal a különbséggel, hogy nem
+a benne találhatóakat ismétli, hanem önmagát az elemet is. Tehát jelen esetben a
 _(kontrollerben meghatározott)_ `links` tömb minden elemén végighaladunk és minden elemre
 a cikluson belül `link` néven akarunk hivatkozni.
 
@@ -96,17 +98,19 @@ két kapcsoszárójelbe rakva pakolunk ki tartalmat a böngészőbe.
 
 ### JavaScript: AngularJS
 
-Most jön a lényegi rész. Eddig csak firkáltunk. a lapunk nem csinált semmit és még hülyén
+Most jön a lényegi rész. Eddig csak firkáltunk, a lapunk nem csinált semmit és még hülyén
 is nézett ki. Varázsoljunk rá mozgást.
 
 {% include_code AngularJS alkalmazásunk 2013-02-16-url-rovidito-1-resz/javascripts/app.js %}
+
+{% include post/adsense_right.html %}
 
 Akkor most bontsuk szét. Először is találunk egy `App` objektumot, amibe pakoltunk egy
 üres `controllers` objektumot. Ez lesz majd a kontrollerek helye. Ismétlem nem kell így
 csinálni, de én így látom át igazán. Mindennek meg kell lennie a helyének :) Továbbá
 található benne egy `utils` és egy `configuration` objektum. Előbbibe pakoljuk majd azokat
-a kódjainkat, amik segítenek nekünk, mint például az URL generáló. Utóbbiba pedig az URL képzéséhez használt adatok vannak,
-mint például a domian és protocol.
+a kódjainkat, amik segítenek nekünk, mint például az URL generáló.
+Utóbbiban pedig az URL képzéséhez használt adatok vannak, mint például a domain és a protocol.
 
 ``` javascript
 (function UrlUtils (app) {
@@ -118,7 +122,7 @@ mint például a domian és protocol.
 })(App);
 ```
 
-Ez egy rém egyszerű függvény, ami kap egy `path` értéket, és elé dobja az URL statikus
+Ez egy rém egyszerű függvény, ami kap egy `path` értéket, és elédobja az URL statikus
 részét. Nagyjából mindent be szoktam zárni egy függvénybe, hogy csak ahhoz férjen hozzá,
 amihez én akarom és belőle is csak az látszódjon, amit én akarok, hogy lássanak belőle.
 
@@ -129,14 +133,14 @@ app.controllers.Link = function ($scope) {
 app.controllers.Link.$inject = ['$scope'];
 ```
 
-Itt két dolgot csinálunk mégis egyet. Először is létrehozunk egy kontrollert, ami a már
+Itt két dolgot csinálunk, mégis egyet. Először is létrehozunk egy kontrollert, ami a már
 jól ismert `App.controllers.Link` címen lesz elérhető. Egyetlen paramétere a `$scope`, mert
-most még mást nem használunk. Ami a `$scope` alá bekerül, az fog látszódni a `view`-ban is.
-Tehát itt fogjuk majd létrehozni a `links` tömböt és az `addLink` függvényt. Az utána lévő
-sor megadja, hogy mik a paraméterei a kontrollerünknek, mert ha tömörírjük a végén a
-JavaScript kódot, akkor nem fogja tudni an AngularJS, hogy mi a neve a változónak. Érdekes
-elgondolás, hogy a változó neve alapján adja meg, a paraméter értékét, de így nagyon
-kényelmes.
+most még mást nem használunk. Ami a `$scope` alá bekerül _(tulajdonsága)_, az fog látszódni
+a `view`-ban is. Tehát itt fogjuk majd létrehozni a `links` tömböt és az `addLink` függvényt.
+Az utána lévő sor megadja, hogy mik a paraméterei a kontrollerünknek, mert ha tömörítjük a
+végén a JavaScript kódot, akkor nem fogja tudni az AngularJS, hogy mi a neve a változónak.
+Érdekes elgondolás, hogy a változó neve alapján adja meg a paraméter értékét és nem a
+paraméterek sorrendje számít, de így nagyon kényelmes.
 
 ``` javascript
 $scope.links = [];
@@ -155,20 +159,25 @@ $scope.addLink = function addLink () {
 
 Legyen akkor a `$scope` alatt egy `links` tömb, ami alapértelmezetten üres. A következő
 részben majd letöltjük a szerverről induláskor a már meglévőket. Ezek után létrehozzuk az
-`addLink` függvényt, ami ugyebát az űrlapunk `onSubmit` eseményére hívódik meg. Az egyész
-egy egyszerű tömb művelettel indul, mindhogy egy objektumot betolunk a `links` tömbbünk
+`addLink` függvényt, ami ugyebát az űrlapunk `onSubmit` eseményére hívódik meg. Az egész
+egy egyszerű tömbművelettel indul, minthogy egy objektumot betolunk a `links` tömbünk
 elejére. A tömb tulajdonságai ugyebár a `short`, amit az `App.utils.url.get` függvénye
 ad vissza, a `long` az a megadott linkünk. A `clicks` jelenleg teljesen mindegy, simán
 nullára állítjuk. A `created_at` mező meg csak azért van, hogy tudjuk mikor lett
 létrehozva így felveszi az aktuális időt értéknek. Ezek után kitöröljük a `newLink`
 értékét.
 
+{% include post/adsense_right.html %}
+
+Mivel a tömbünk össze lett kapcsolva az `ng-repeat` használata során a táblázattal, így
+ha változik a tömb, akkor frissíti a táblázat sorait.
+
 Nem túl érdekes a link generálása, mert most statikusan minden URL végére ugyan azt
 fogja tenni. Amiért nem törtem magam rajta, az azért van, mert ez úgyis a szerver oldalon
 fog generálódni.
 
 Van benne egy hivatkozás, ami furcsa lehet – még a többihez képest is – mégpedig önmaga
-a `newLink`. Ugyemár mondtam, hogy a kontrollerben megadott változókhoz fér hozzá a `view`.
+a `newLink`. Ugye már mondtam, hogy a kontrollerben megadott változókhoz fér hozzá a `view`.
 Viszont, ha `ng-model` segítségével megadok egy változót, ám az nem létezik, akkor
 létrehozza nekünk a `$scope` alatt.
 
