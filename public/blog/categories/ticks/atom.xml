@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Kategória: ticks | [Dev] Folyam.info]]></title>
+  <link href="http://dev.folyam.info/blog/categories/ticks/atom.xml" rel="self"/>
+  <link href="http://dev.folyam.info/"/>
+  <updated>2013-02-17T00:34:15+01:00</updated>
+  <id>http://dev.folyam.info/</id>
+  <author>
+    <name><![CDATA[Balazs Nadasdi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Weboldal Google Drive-ból]]></title>
+    <link href="http://dev.folyam.info/blog/2013/02/17/weboldal-google-drive-bol/"/>
+    <updated>2013-02-17T00:02:00+01:00</updated>
+    <id>http://dev.folyam.info/blog/2013/02/17/weboldal-google-drive-bol</id>
+    <content type="html"><![CDATA[<p>Végre eljött az idő. Hasonlóan, mint <a href="https://www.dropbox.com/home">Dropbox</a>-nál,
+a <a href="https://drive.google.com">Google Drive</a> is képes mostantól tartalmat kiszolgálni.
+Mostmár teljes értékűnek tekintem ezen a vonalon :)</p>
+
+<h3>Miért?</h3>
+
+<p>Google Apps Script segítségével igen sok mindenhez hozzá lehet férni. A hozzá tartozó
+scriptek illetve html, css és javascript fájlok tárolhatóak a Drive és onnan ki is
+szolgálhatóak.</p>
+
+<!--more-->
+
+
+<h3>Hogyan?</h3>
+
+<p>Először is nyissuk meg a <a href="https://drive.google.com">Google Drive</a>-ot. Csináljunk egy
+könyvtárat és állítsuk be a jogait úgy, hogy mindenki láthassa, azaz publikusra. Hozzunk
+létre a kívánt tartalmat. Jelen esetben egy HTML fájlt. Töltsük fel, vagy hozzuk egyből
+ott létre.</p>
+
+<p><img class="center" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-17-weboldal-google-drive-bol/new-text-document.png" title="&#34;Új fájl létrehozása&#34;" alt="&#34;Új fájl létrehozása&#34;"></p>
+
+<p>Nyissuk meg a fájlt a Google Drive Viewer <em>(Google Drive - Megtekintő)</em> használatával.</p>
+
+<p><img class="center" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-17-weboldal-google-drive-bol/open-with-preview.png" title="&#34;Előnézet&#34;" alt="&#34;Előnézet&#34;"></p>
+
+<p>Itt megjelent egy Preview <em>(Előnézet)</em> gomb, amit megnyomva megkapjuk a nyers fájlt.</p>
+
+<p><img class="center" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-17-weboldal-google-drive-bol/check-the-output.png" title="&#34;Nyers fájl&#34;" alt="&#34;Nyers fájl&#34;"></p>
+
+<p>Innentől kezdve már csak az URL-t kell kimásolni és kész is.</p>
+
+<p><img class="center" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-17-weboldal-google-drive-bol/copy-the-url.png" title="&#34;Elérési út&#34;" alt="&#34;Elérési út&#34;"></p>
+
+<p>Viszonylag egyszerű. A legnagyobb buktatója, ahol én is elvéreztem először az a tartalmazó
+könyvtár. Annak is publikusnak kell lennie különben 404 hibát kaputam.</p>
+
+<p>Ezek után mellé raktam egy <code>main.css</code>-t és simán megadtam az <code>index.html</code>-ben a relatív
+hivatkozást rá</p>
+
+<p><code>html
+&lt;link rel="stylesheet" href="main.css"&gt;
+</code></p>
+
+<p>A teljes "kész" mű elérhető itt: <a href="https://googledrive.com/host/0ByeYB4CMClbLNy1TSDk0a1hJREk/index.html">Yeah!</a></p>
+]]></content>
+  </entry>
+  
+</feed>
