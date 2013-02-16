@@ -4,6 +4,7 @@ title: "URL rövidítő 1. rész"
 date: 2013-02-16 12:09
 comments: true
 categories: [hogyan, javascript, angularjs, html]
+image: http://dev.folyam.info.s3.amazonaws.com/2013-02-16-url-rovidito-1-resz/AngularJS-hogyan.png
 ---
 
 {% img left http://dev.folyam.info.s3.amazonaws.com/2013-02-16-url-rovidito-1-resz/AngularJS-hogyan.png "AngularJS Hogyan" %}

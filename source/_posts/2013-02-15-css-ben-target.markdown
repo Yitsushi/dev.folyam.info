@@ -4,6 +4,7 @@ title: "CSS-ben :target?"
 date: 2013-02-15 17:56
 comments: true
 categories: css
+image: http://dev.folyam.info.s3.amazonaws.com/2013-02-15-css-ben-target/gold.png
 ---
 
 {% img center http://dev.folyam.info.s3.amazonaws.com/2013-02-15-css-ben-target/gold.png %}

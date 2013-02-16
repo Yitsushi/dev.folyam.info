@@ -4,6 +4,7 @@ title: "Röviden tömören"
 date: 2013-02-15 15:09
 comments: true
 categories: general
+image: http://dev.folyam.info.s3.amazonaws.com/2013-02-15-roviden-tomoren/where-everything-begins.jpeg
 ---
 
 {% img left http://dev.folyam.info.s3.amazonaws.com/2013-02-15-roviden-tomoren/where-everything-begins.jpeg 240 "omg" "omg2" %}
