@@ -4,7 +4,7 @@
   <title><![CDATA[[Dev] Folyam.info]]></title>
   <link href="http://dev.folyam.info/atom.xml" rel="self"/>
   <link href="http://dev.folyam.info/"/>
-  <updated>2013-02-17T01:13:28+01:00</updated>
+  <updated>2013-02-17T01:16:31+01:00</updated>
   <id>http://dev.folyam.info/</id>
   <author>
     <name><![CDATA[Balazs Nadasdi]]></name>
@@ -68,6 +68,14 @@ hivatkozást rá.</p>
 <h3>Biztonsági kérdés</h3>
 
 <p>SSL-es URL-t kapunk. Mindezt a <code>googledrive.com</code> domain alatt. Ötletek?</p>
+
+<p>Ami hirtelen eszembe jut:</p>
+
+<ul>
+<li>iframe/cross-domain policy</li>
+<li>Google SSL cert? Kártékony kódokkal mi történik?</li>
+</ul>
+
 ]]></content>
   </entry>
   

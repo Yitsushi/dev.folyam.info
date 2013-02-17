@@ -55,3 +55,8 @@ A teljes "kész" mű elérhető itt: [Yeah!](https://googledrive.com/host/0ByeYB
 ### Biztonsági kérdés
 
 SSL-es URL-t kapunk. Mindezt a `googledrive.com` domain alatt. Ötletek?
+
+Ami hirtelen eszembe jut:
+
+* iframe/cross-domain policy
+* Google SSL cert? Kártékony kódokkal mi történik?
