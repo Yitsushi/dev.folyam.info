@@ -4,7 +4,7 @@
   <title><![CDATA[[Dev] Folyam.info]]></title>
   <link href="http://dev.folyam.info/atom.xml" rel="self"/>
   <link href="http://dev.folyam.info/"/>
-  <updated>2013-02-17T01:16:31+01:00</updated>
+  <updated>2013-02-17T10:43:27+01:00</updated>
   <id>http://dev.folyam.info/</id>
   <author>
     <name><![CDATA[Balazs Nadasdi]]></name>
@@ -75,6 +75,13 @@ hivatkozást rá.</p>
 <li>iframe/cross-domain policy</li>
 <li>Google SSL cert? Kártékony kódokkal mi történik?</li>
 </ul>
+
+
+<h3>Egy kis adalék, ami befutott</h3>
+
+<h5><a href="http://gdriv.es/">gdriv.es</a></h5>
+
+<blockquote><p>Ez tetszeni fog!<br/>http://gdriv.es/balazsnadasdi<br/>Ezzel csináltam: http://gdriv.es/﻿</p><p>Ha jól látom egy iframe-ben hívja be az eredetit, ahol viszont megmarad az ssl.﻿</p><footer><strong>Robert Cartman</strong> <cite><a href='https://plus.google.com/105613682641367710983/posts/ZTEPZRY7sDk'>Google+</a></cite></footer></blockquote>
 
 ]]></content>
   </entry>

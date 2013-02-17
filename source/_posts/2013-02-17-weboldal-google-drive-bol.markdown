@@ -60,3 +60,15 @@ Ami hirtelen eszembe jut:
 
 * iframe/cross-domain policy
 * Google SSL cert? Kártékony kódokkal mi történik?
+
+### Egy kis adalék, ami befutott
+
+##### [gdriv.es](http://gdriv.es/)
+
+{% blockquote Robert Cartman https://plus.google.com/105613682641367710983/posts/ZTEPZRY7sDk Google+ %}
+Ez tetszeni fog!
+http://gdriv.es/balazsnadasdi
+Ezzel csináltam: http://gdriv.es/﻿
+
+Ha jól látom egy iframe-ben hívja be az eredetit, ahol viszont megmarad az ssl.﻿
+{% endblockquote %}
