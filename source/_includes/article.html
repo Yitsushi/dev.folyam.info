@@ -21,6 +21,9 @@
   {% if excerpted == 'true' %}
     <footer>
       <a rel="full-article" href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a>
+      {% if site.google_plus_one_post_list %}
+        {% include post/sharing_external.html %}
+      {% endif %}
     </footer>
   {% endif %}
 {% else %}

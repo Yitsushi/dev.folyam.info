@@ -58,3 +58,7 @@ a:hover, a:visited:hover {
   background-color: hsla(0, 0%, 20%, 0.1);
   border: 1px solid hsla(0, 0%, 20%, 0.3);
 }
+
+.sharing.external {
+  float: right;
+}
