@@ -4,7 +4,7 @@
   <title><![CDATA[Kategória: ticks | [Dev] Folyam.info]]></title>
   <link href="http://dev.folyam.info/blog/categories/ticks/atom.xml" rel="self"/>
   <link href="http://dev.folyam.info/"/>
-  <updated>2013-02-17T01:11:24+01:00</updated>
+  <updated>2013-02-17T01:13:28+01:00</updated>
   <id>http://dev.folyam.info/</id>
   <author>
     <name><![CDATA[Balazs Nadasdi]]></name>
@@ -66,7 +66,7 @@ hivatkozást rá.</p>
 
 <h3>Biztonsági kérdés</h3>
 
-<p>SSL-es URL-r kapunk. Mindezt a googledrive.com domain alatt. Ötletek?</p>
+<p>SSL-es URL-t kapunk. Mindezt a <code>googledrive.com</code> domain alatt. Ötletek?</p>
 ]]></content>
   </entry>
   

@@ -54,4 +54,4 @@ A teljes "kész" mű elérhető itt: [Yeah!](https://googledrive.com/host/0ByeYB
 
 ### Biztonsági kérdés
 
-SSL-es URL-r kapunk. Mindezt a googledrive.com domain alatt. Ötletek?
+SSL-es URL-t kapunk. Mindezt a `googledrive.com` domain alatt. Ötletek?
