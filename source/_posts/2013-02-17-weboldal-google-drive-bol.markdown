@@ -14,7 +14,7 @@ Mostmár teljes értékűnek tekintem ezen a vonalon :)
 ### Miért?
 
 Google Apps Script segítségével igen sok mindenhez hozzá lehet férni. A hozzá tartozó
-scriptek illetve html, css és javascript fájlok tárolhatóak a Drive és onnan ki is
+scriptek illetve html, css és javascript fájlok tárolhatóak a Drive-on és onnan ki is
 szolgálhatóak.
 
 <!--more-->
@@ -40,14 +40,18 @@ Innentől kezdve már csak az URL-t kell kimásolni és kész is.
 
 {% img center http://dev.folyam.info.s3.amazonaws.com/2013-02-17-weboldal-google-drive-bol/copy-the-url.png "Elérési út" %}
 
-Viszonylag egyszerű. A legnagyobb buktatója, ahol én is elvéreztem először az a tartalmazó
-könyvtár. Annak is publikusnak kell lennie különben 404 hibát kaputam.
+Viszonylag egyszerű. A legnagyobb buktatója, ahol én is elvéreztem először, az a tartalmazó
+könyvtár. Annak is publikusnak kell lennie, különben 404 hibát kaptam.
 
 Ezek után mellé raktam egy `main.css`-t és simán megadtam az `index.html`-ben a relatív
-hivatkozást rá
+hivatkozást rá.
 
 ``` html
 <link rel="stylesheet" href="main.css">
 ```
 
 A teljes "kész" mű elérhető itt: [Yeah!](https://googledrive.com/host/0ByeYB4CMClbLNy1TSDk0a1hJREk/index.html)
+
+### Biztonsági kérdés
+
+SSL-es URL-r kapunk. Mindezt a googledrive.com domain alatt. Ötletek?
