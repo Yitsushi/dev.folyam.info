@@ -3,16 +3,53 @@
 #
 # Outputs a string with a given attribution as a block about a Product Promotion
 #
-#   {% product_promo_box Bobby Willis http://google.com/search?q=pants the search for bobby's pants %}
-#   Wheeee!
-#   {% endblockquote %}
+#   {% product_promo_box %}
+#     Title: Name of the product
+#     Author: Author (books), Manufacturer, etc
+#     Image: Image URL about the product
+#     Price: Price of the product
+#     PromoPrice: Promotion Price
+#     PromoCode: Promotion code
+#     Source: Publisher/Seller/Site
+#     Url: URL to the product
+#     Description: Description of the product (short)
+#   {% endproduct_promo_box %}
 #   ...
-#   <blockquote>
-#     <p>Wheeee!</p>
-#     <footer>
-#     <strong>Bobby Willis</strong><cite><a href="http://google.com/search?q=pants">The Search For Bobby's Pants</a>
-#   </blockquote>
-#
+#   <div class="product-box">
+#     <a href="URL to the product"
+#        title="Name of the product">
+#       <img class="product-image"
+#            src="Image URL about the product"
+#            alt="Name of the product"
+#            title="Name of the product">
+#     </a>
+#     <div class="product-info">
+#       <div class="product-title">
+#         <a href="URL to the product"
+#            title="Name of the product">
+#           Name of the product
+#         </a>
+#       </div>
+#       <div class="product-source">
+#         <a href="URL to the product"
+#            title="Publisher/Seller/Site">
+#           Publisher/Seller/Site
+#         </a>
+#       </div>
+#       <div class="product-author">
+#         by <span>Author (books), Manufacturer, etc</span>
+#       </div>
+#       <div class="product-price">
+#         <span class="old">Price of the product</span> helyett <span class="now">Promotion Price</span>
+#       </div>
+#       <div class="product-promo-code">
+#         Promóciós kód: <span>DEAL</span>
+#       </div>
+#       <div class="product-description">
+#         Description of the product (short)
+#       </div>
+#     </div>
+#   </div>
 
 module Jekyll
 
@@ -90,6 +127,8 @@ module Jekyll
       return content if url.nil?
 
       title = content if title.nil?
+
+      title.gsub!(/'/, "&#39;")
 
       return "<a href='#{url}' title='#{title}'>#{content}</a>"
     end
