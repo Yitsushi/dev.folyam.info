@@ -13,6 +13,8 @@ Volt már példa arra, hogy egy könyv nem volt rossz, de jó sem, ha az árát 
 oknál fogva szépen elkezdem kigyűjteni ide azokat a könyveket, melyek lényegesen
 hozzájárultak a fejlődésemhez vagy épp másokéhoz.
 
+<!--more-->
+
 ### Reguláris kifejezések
 
 {% product_promo_box %}
