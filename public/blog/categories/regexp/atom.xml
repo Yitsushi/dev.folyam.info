@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Kategória: book | [Dev] Folyam.info]]></title>
-  <link href="http://dev.folyam.info/blog/categories/book/atom.xml" rel="self"/>
+  <title><![CDATA[Kategória: regexp | [Dev] Folyam.info]]></title>
+  <link href="http://dev.folyam.info/blog/categories/regexp/atom.xml" rel="self"/>
   <link href="http://dev.folyam.info/"/>
   <updated>2013-02-18T15:05:53+01:00</updated>
   <id>http://dev.folyam.info/</id>

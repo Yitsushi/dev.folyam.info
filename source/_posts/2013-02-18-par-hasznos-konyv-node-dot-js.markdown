@@ -3,7 +3,7 @@ layout: post
 title: "Pár hasznos könyv (1. felvonás)"
 date: 2013-02-18 11:27
 comments: true
-categories: [book, recommended]
+categories: [book, recommended, node.js, regexp, dart]
 ---
 
 Rendszeresen fogok könyveket ajánlani, mert azok igencsak hasznosak. Ha valaki tanulni,
