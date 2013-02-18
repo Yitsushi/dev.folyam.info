@@ -62,3 +62,65 @@ a:hover, a:visited:hover {
 .sharing.external {
   float: right;
 }
+
+.product-box {
+  overflow: hidden;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+}
+
+.product-box img {
+  float: left;
+  max-width: 25%;
+}
+
+.product-box .product-info {
+  margin-left: 28%;
+}
+
+.product-box .product-info .product-title {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.product-box .product-info .product-title a {
+  color: hsl(0, 0%, 30%);
+  text-decoration: none;
+}
+.product-box .product-info .product-author {
+  font-style: italic;
+}
+.product-box .product-info .product-price {
+  padding: 8px 0;
+}
+.product-box .product-info .product-price span {
+  padding: 0 5px;
+}
+.product-box .product-info .product-price .now {
+  color: hsl(120, 50%, 40%);
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.product-box .product-info .product-price .old {
+  font-weight: bold;
+  font-size: 1.em;
+  text-decoration: line-through;
+}
+.product-box .product-info .product-promo-code {
+  font-size: 0.8em;
+}
+.product-box .product-info .product-promo-code span {
+  color: hsl(230, 50%, 40%);
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.product-box .product-info .product-source {
+  font-size: 0.9em;
+  float: right;
+}
+.product-box .product-info .product-description {
+  padding-top: 6px;
+  font-size: 0.8em;
+  font-style: italic;
+}
