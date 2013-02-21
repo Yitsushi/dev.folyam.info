@@ -86,6 +86,7 @@ module Jekyll
     </div>
     <div class="attachments">#{attachments.join("\n")}</div>
   </div>
+  <div class="comments">Kommentek: <a href="#{post["url"]}">#{post["object"]["replies"]["totalItems"]}</a></div>
 </div>
       HTML
     end
