@@ -2,38 +2,42 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/15/roviden-tomoren/</loc>
-        <lastmod>2013-02-16T14:50:24+01:00</lastmod>
+        <lastmod>2013-02-21T17:52:13+01:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/15/css-ben-target/</loc>
-        <lastmod>2013-02-16T14:50:16+01:00</lastmod>
+        <lastmod>2013-02-21T17:52:13+01:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/16/url-rovidito-1-resz/</loc>
-        <lastmod>2013-02-16T14:44:07+01:00</lastmod>
+        <lastmod>2013-02-21T17:52:13+01:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/17/weboldal-google-drive-bol/</loc>
-        <lastmod>2013-02-17T10:43:20+01:00</lastmod>
+        <lastmod>2013-02-21T17:52:13+01:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/18/par-hasznos-konyv-node-dot-js/</loc>
-        <lastmod>2013-02-18T15:07:10+01:00</lastmod>
+        <lastmod>2013-02-21T17:52:13+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://dev.folyam.info/blog/2013/02/21/googleplus-beagyazasa-octopress-be/</loc>
+        <lastmod>2013-02-21T17:56:19+01:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/archives/</loc>
-        <lastmod>2013-02-18T15:07:10+01:00</lastmod>
+        <lastmod>2013-02-21T17:56:19+01:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/categories/</loc>
-        <lastmod>2013-02-18T15:07:10+01:00</lastmod>
+        <lastmod>2013-02-21T17:56:19+01:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/</loc>
-        <lastmod>2013-02-18T15:07:10+01:00</lastmod>
+        <lastmod>2013-02-21T17:56:19+01:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/robots.txt</loc>
-        <lastmod>2013-02-15T15:39:04+01:00</lastmod>
+        <lastmod>2013-02-21T17:52:13+01:00</lastmod>
     </url>
 </urlset>

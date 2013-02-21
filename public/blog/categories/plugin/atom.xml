@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Kategória: plugin | [Dev] Folyam.info]]></title>
+  <link href="http://dev.folyam.info/blog/categories/plugin/atom.xml" rel="self"/>
+  <link href="http://dev.folyam.info/"/>
+  <updated>2013-02-21T17:58:44+01:00</updated>
+  <id>http://dev.folyam.info/</id>
+  <author>
+    <name><![CDATA[Balazs Nadasdi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Google+ beágyazása Octopress-be]]></title>
+    <link href="http://dev.folyam.info/blog/2013/02/21/googleplus-beagyazasa-octopress-be/"/>
+    <updated>2013-02-21T00:48:00+01:00</updated>
+    <id>http://dev.folyam.info/blog/2013/02/21/googleplus-beagyazasa-octopress-be</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-21-googleplus-beagyazasa-octopress-be/octopress.png" title="&#34;Octopress&#34;" alt="&#34;Octopress&#34;"></p>
+
+<p>Ezzel a bejegyzéssel tesztelem, az <a href="http://octopress.org/">Octopress</a> kiegészítőmet
+<a href="https://plus.google.com/">Google+</a>-hoz. A lényege az, hogy a bejegyzésbe beraksz
+egy <code>googleplus_post</code> blokkot a bejegyzésbe és a rendszer begenerálja a kívánt tartalmat.</p>
+
+<p>A forrás, amint minden hibáját kigyomláltam publikus lesz,
+ahogyan eddig is minden más. Ha van rá kereslet, akkor akár végig is magyarázom egy cikk
+keretében a működését, illetve miként tudsz te is ilyet írni.</p>
+
+<h3>Működés</h3>
+
+<p>Mivel simán beágyazni nem tudom élőben, így a poszt generálásakor egy <code>Liquid::Tag</code>
+kiegészítő letölti az adott bejegyzést a Google+ API használatával. A legnagyobb probléma,
+hogy nem lehet értelmesen lekérdezni egy adott bejegyzést, mert a bejegyzés azonosítója
+nem egyenlő az oldalon lévő URL-ben szereplő karakterlánccal. Az egyetlen mód jelenleg amit
+találtam, hogy lekérdezem a bejegyzéseit az adott embernek vagy oldalnak és megnézem
+melyiknek az URL-jeben szerepel a megadott <code>post_id</code>. Remélem Azért erre később találok
+értelmes megoldást. Minden megtalált bejegyzés adatát fájlrendszeren elraktározom, hogy
+ne kelljen minden alkalommal megkérdezni a szervert :) Nagyjából ennyi a működése.</p>
+
+<!--more-->
+
+
+<h3>Használat</h3>
+
+<pre><code>{% googleplus_post page_id post_id %}
+
+page_id: Az oldal vagy személy Google+ ID-ja
+post_id: Az adott bejegyzés ID-ja
+</code></pre>
+
+<p>Tehát, ha ezt a bejegyzést szeretném megosztani, akkor megnézem ennek az címét, ami nem
+más, mint <code>https://plus.google.com/u/0/105613682641367710983/posts/DWc2TZgCtuS</code>.</p>
+
+<p>Ezek alapján <code>page_id: 105613682641367710983</code> és <code>post_id: DWc2TZgCtuS</code>. Jöhet a cikk és
+berakható <code>{% googleplus_post 105613682641367710983 DWc2TZgCtuS %}</code>
+tag elhelyezéssel.</p>
+
+<h3>Végeredmény</h3>
+
+<p><div class="googleplusembed">
+  <div class="actor">
+    <img class="left" src="https://lh5.googleusercontent.com/-uC9beXHrj5E/AAAAAAAAAAI/AAAAAAAAAAA/KAEqsBaPboc/photo.jpg?sz=50">
+    <div>
+      <strong><a href="https://plus.google.com/105613682641367710983">+[Dev] Folyam.info</a></strong>
+      <small>2012-12-28 </small>
+      <a class="jump" href="https://plus.google.com/105613682641367710983/posts/DWc2TZgCtuS">ugr&aacute;s a bejegyz&eacute;sre</a>
+    </div>
+  </div>
+  <div class="annotation">
+    Érdekesség. Sőt. Ez nem pusztán érdekesség, hanem elsajátítandóság!<br><br> <a class='ot-hashtag' href='https://plus.google.com/s/%23javascript'>#javascript</a>   <a class='ot-hashtag' href='https://plus.google.com/s/%23security'>#security</a>  
+  </div>
+  <div class="original">
+    <div class="actor">
+      <img class="left" src="https://lh3.googleusercontent.com/-4-TWa77Mg_4/AAAAAAAAAAI/AAAAAAAAAAA/73tyvxdE2iI/photo.jpg?sz=50">
+      <div>
+        <strong>
+          <a href="https://plus.google.com/114636678211810483111">+JavaScript</a>
+        </strong>
+        <a class="jump" href="https://plus.google.com/114636678211810483111/posts/DmmGhp4yLwY">ugr&aacute;s a bejegyz&eacute;sre</a>
+      </div>
+    </div>
+    <div class="annotation">
+      <b>Slides: Securing a JavaScript based Web Application</b>
+    </div>
+    <div class="attachments"><div class="attachment">
+  <a href="http://bit.ly/TCiqXF"><img class="left" src="http://eoftedal.github.com/WebRebels2012/presentation/images/erlend.jpg"></a>
+  <div><a href="http://bit.ly/TCiqXF"><strong>Securing a JavaScript based Web Applicaiton</strong></a></div>
+  <div class="annotation">(function(q) { var a = location.href.split("#!")[1]; if (a) { g.location = a; } }). https://twitter.com/#!/web_rebels ↓ https://twitter.com/web_rebels. https://twitter.com/#!http://evil.com ↓ http://e...</div>
+</div>
+</div>
+  </div>
+</div>
+</p>
+
+<h3>Mi a következő lépés?</h3>
+
+<p>Kommentek betöltése. Mivel normális embed még nincs, ezért marad az a megoldás jelenleg
+<em>(mivel mindenféle gányolásos megoldásokat nem szeretem)</em>, hogy felállítok időkorlátokat.
+Az időkorlátokon belül pedig adott időintervallumban frissítem a megjegyzéseket.</p>
+]]></content>
+  </entry>
+  
+</feed>
