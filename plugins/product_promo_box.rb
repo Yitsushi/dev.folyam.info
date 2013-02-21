@@ -1,5 +1,5 @@
 #
-# Author: Balazs Nadasdi
+# Author: Balazs Nadasdi <yitsushi@gmail.com> (http://blog.code-infection.com/)
 #
 # Outputs a string with a given attribution as a block about a Product Promotion
 #
@@ -40,10 +40,10 @@
 #         by <span>Author (books), Manufacturer, etc</span>
 #       </div>
 #       <div class="product-price">
-#         <span class="old">Price of the product</span> helyett <span class="now">Promotion Price</span>
+#         Old price: <span class="old">Price of the product</span>; now: <span class="now">Promotion Price</span>
 #       </div>
 #       <div class="product-promo-code">
-#         Promóciós kód: <span>DEAL</span>
+#         Promotion code: <span>DEAL</span>
 #       </div>
 #       <div class="product-description">
 #         Description of the product (short)
@@ -171,9 +171,9 @@ module Jekyll
       if @promoPrice.nil?
         promo += "<div class='product-price'><span class='now'>#{@price}</span></div>" unless @price.nil?
       else
-        promo += "<div class='product-price'><span class='old'>#{@price}</span> helyett <span class='now'>#{@promoPrice}</span></div>" unless @price.nil?
+        promo += "<div class='product-price'>Old price: <span class='old'>#{@price}</span>; now: <span class='now'>#{@promoPrice}</span></div>" unless @price.nil?
       end
-      promo += "<div class='product-promo-code'>Prom&oacute;ci&oacute;s k&oacute;d: <span>#{@promoCode}</span></div>" unless @promoCode.nil?
+      promo += "<div class='product-promo-code'>Promotion code: <span>#{@promoCode}</span></div>" unless @promoCode.nil?
       promo += "<div class='product-description'>#{@description}</div>" unless @description.nil?
 
       promo = "<div class='product-info'>#{promo}</div>";

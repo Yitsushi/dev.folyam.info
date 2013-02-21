@@ -2,7 +2,7 @@
 layout: post
 comments: true
 date: 2013-02-21 00:48
-title: Google+ "beágyazása" Octopress-be
+title: Google+ beágyazása Octopress-be
 categories: [ javascript, security, google+, octopress, plugin ]
 image: http://dev.folyam.info.s3.amazonaws.com/2013-02-21-googleplus-beagyazasa-octopress-be/octopress.png
 ---
