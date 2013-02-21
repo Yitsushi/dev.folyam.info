@@ -124,3 +124,54 @@ a:hover, a:visited:hover {
   font-size: 0.8em;
   font-style: italic;
 }
+
+
+
+.googleplusembed {
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.googleplusembed .annotation {
+  margin-left: 100px;
+}
+.googleplusembed .original {
+  margin-left: 100px;
+  margin-top: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 1px dashed #aaa;
+}
+.googleplusembed .attachments {
+  clear: both;
+  margin-left: 100px;
+}
+.googleplusembed .attachments .attachment {
+  font-size: 0.8em;
+  line-height: 1.4em;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.googleplusembed .attachments .attachment strong,
+.googleplusembed .actor div {
+  padding-bottom: 16px;
+  display: block;
+}
+.googleplusembed .attachments .attachment img {
+  max-width: 200px;
+}
+.googleplusembed a.jump {
+  font-size: 0.8em;
+  float: right;
+}
+
+.googleplusembed small {
+  float: right;
+  color: #555;
+  margin-left: 15px;
+}
+
+img {
+  background-color: white;
+}
