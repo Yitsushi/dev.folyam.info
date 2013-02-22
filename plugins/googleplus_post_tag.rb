@@ -115,7 +115,7 @@ module Jekyll
       activities["items"].each do |activity|
         if activity["url"].match /#{page_id}\/posts\/#{post_id}/
           post = api.get_acivity(activity["id"])
-          cache_post page_id, post_id, post
+          return cache_post page_id, post_id, post
         end
       end
 
