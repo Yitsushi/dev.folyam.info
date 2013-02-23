@@ -5,13 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="hu"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archívum - [Dev] Folyam.info</title>
+  <title>Android + css:font-family - [Dev] Folyam.info</title>
   <meta name="author" content="Balazs Nadasdi">
 
   
-  <meta name="description" content="Blog Archívum 2013 Android + css:font-family
-Feb 24 2013 kategóra: css, sucks Google+ beágyazása Octopress-be
-Feb 21 2013 kategóra: google+, &hellip;">
+  <meta name="description" content="Hogyan is működik a CSS-ben a font-family? Megadsz jópár fontot, amit használni szeretnél.
+Ha az első, amit megadtál, nem jó, akkor a böngésző &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,25 +18,23 @@ Feb 21 2013 kategóra: google+, &hellip;">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta itemprop="name" content="Blog Archívum - [Dev] Folyam.info">
-  <meta property="og:title" content="Blog Archívum - [Dev] Folyam.info">
-  <meta itemprop="description" content="Blog Archívum 2013 Android + css:font-family
-Feb 24 2013 kategóra: css, sucks Google+ beágyazása Octopress-be
-Feb 21 2013 kategóra: google+, &hellip;">
-  <meta property="og:description" content="Blog Archívum 2013 Android + css:font-family
-Feb 24 2013 kategóra: css, sucks Google+ beágyazása Octopress-be
-Feb 21 2013 kategóra: google+, &hellip;">
+  <meta itemprop="name" content="Android + css:font-family - [Dev] Folyam.info">
+  <meta property="og:title" content="Android + css:font-family - [Dev] Folyam.info">
+  <meta itemprop="description" content="Hogyan is működik a CSS-ben a font-family? Megadsz jópár fontot, amit használni szeretnél.
+Ha az első, amit megadtál, nem jó, akkor a böngésző &hellip;">
+  <meta property="og:description" content="Hogyan is működik a CSS-ben a font-family? Megadsz jópár fontot, amit használni szeretnél.
+Ha az első, amit megadtál, nem jó, akkor a böngésző &hellip;">
   
 
   
-  <link rel="canonical" href="http://dev.folyam.info/blog/archives/">
+  <link rel="canonical" href="http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/libs/jquery-1.9.1.min.js"></script>
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <meta property="og:url" content="http://dev.folyam.info/blog/archives/">
+  <meta property="og:url" content="http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family/">
   <meta property="og:site_name" content="[Dev] Folyam.info">
   <meta property="og:type" content="blog">
   <link href="http://feeds.feedburner.com/devFolyaminfo" rel="alternate" title="[Dev] Folyam.info" type="application/atom+xml">
@@ -108,120 +105,127 @@ Feb 21 2013 kategóra: google+, &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archívum</h1>
+    
+      <h1 class="entry-title">Android + Css:font-family</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-24T00:03:00+01:00" pubdate data-updated="true">Feb 24<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p><img class="left" src="http://folyam.info.s3.amazonaws.com/2013-02-24-android-plus-css-font-family/pt_sans.jpeg" width="190" title="&#34;PT Sans&#34;" alt="&#34;PT Sans&#34;"></p>
 
-  
-  <h2>2013</h2>
+<p>Hogyan is működik a CSS-ben a <code>font-family</code>? Megadsz jópár fontot, amit használni szeretnél.
+Ha az első, amit megadtál, nem jó, akkor a böngésző használja a másodikat, és ha az sem jó,
+akkor a harmadikat. Legalábbis így kellene, hogy működjon. A legtöbb böngészőben már évek
+óta így oldható meg az, hogy ha egy betűtípus nem elérhető, akkor használjon mást.
+Az Android beépített böngészője is így gondolja?</p>
 
-<article>
-  
-<h1><a href="/blog/2013/02/24/android-plus-css-font-family/">Android + css:font-family</a></h1>
-<time datetime="2013-02-24T00:03:00+01:00" pubdate><span class='month'>Feb</span> <span class='day'>24</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">kategóra: <a class='category' href='/blog/categories/css/'>css</a>, <a class='category' href='/blog/categories/sucks/'>sucks</a></span>
-</footer>
+<!--more-->
 
 
-</article>
+<p><em><del><small>A nagy lófa</small></del></em> Nem. Az alap Android böngésző, ha az első fontot
+megtalálja, és egy karakter nincs benne annak a karakterkészletében, akkor nem jeleníti
+meg. Így jártam a <a href="https://plus.google.com/u/0/105853491239853198987">+Folyam.info</a>
+és a <a href="https://plus.google.com/u/0/105613682641367710983">+[Dev] Folyam.info</a>
+oldalaknál is, ahol <code>PT Sans</code> és <code>PT Serif</code> volt használva. Mivel ezekben alapértelmezetten
+nincs <code>ő</code> és <code>ű</code> betű, így ebben a böngészőben nem jelentek meg ezek a betűk. Más böngészőnél
+nem biztos ezen hiba, például a
+<a href="https://play.google.com/store/apps/details?id=com.android.chrome">Chrome for Android</a>
+normálisan kezeli.</p>
 
+<p>Mi lett a következmény? Kiszedtem ezeket a betűtípusokat és hagytam a többit, ami
+<code>Helvetica Neue</code> és <code>Georgia</code>.</p>
 
-
-<article>
-  
-<h1><a href="/blog/2013/02/21/googleplus-beagyazasa-octopress-be/">Google+ beágyazása Octopress-be</a></h1>
-<time datetime="2013-02-21T00:48:00+01:00" pubdate><span class='month'>Feb</span> <span class='day'>21</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">kategóra: <a class='category' href='/blog/categories/google-/'>google+</a>, <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/plugin/'>plugin</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/02/18/par-hasznos-konyv-node-dot-js/">Pár hasznos könyv (1. felvonás)</a></h1>
-<time datetime="2013-02-18T11:27:00+01:00" pubdate><span class='month'>Feb</span> <span class='day'>18</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">kategóra: <a class='category' href='/blog/categories/book/'>book</a>, <a class='category' href='/blog/categories/dart/'>dart</a>, <a class='category' href='/blog/categories/node-js/'>node.js</a>, <a class='category' href='/blog/categories/recommended/'>recommended</a>, <a class='category' href='/blog/categories/regexp/'>regexp</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/02/17/weboldal-google-drive-bol/">Weboldal Google Drive-ból</a></h1>
-<time datetime="2013-02-17T00:02:00+01:00" pubdate><span class='month'>Feb</span> <span class='day'>17</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">kategóra: <a class='category' href='/blog/categories/google/'>google</a>, <a class='category' href='/blog/categories/hogyan/'>hogyan</a>, <a class='category' href='/blog/categories/html/'>html</a>, <a class='category' href='/blog/categories/ticks/'>ticks</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/02/16/url-rovidito-1-resz/">URL rövidítő 1. rész</a></h1>
-<time datetime="2013-02-16T12:09:00+01:00" pubdate><span class='month'>Feb</span> <span class='day'>16</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">kategóra: <a class='category' href='/blog/categories/angularjs/'>angularjs</a>, <a class='category' href='/blog/categories/hogyan/'>hogyan</a>, <a class='category' href='/blog/categories/html/'>html</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/02/15/css-ben-target/">CSS-ben :target?</a></h1>
-<time datetime="2013-02-15T17:56:00+01:00" pubdate><span class='month'>Feb</span> <span class='day'>15</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">kategóra: <a class='category' href='/blog/categories/css/'>css</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/02/15/roviden-tomoren/">Röviden tömören</a></h1>
-<time datetime="2013-02-15T15:09:00+01:00" pubdate><span class='month'>Feb</span> <span class='day'>15</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">kategóra: <a class='category' href='/blog/categories/general/'>general</a></span>
-</footer>
-
-
-</article>
-
+<p>A hiba felfedezéséért külön köszönet jár
+<a href="https://plus.google.com/u/0/104970190473967264780">+Ágoston Péter</a>nek. :)</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+
+
+  
+
+
+
+  <span class="byline author vcard">Beküldő: <a href="https://plus.google.com/104695723888883478740?rel=author" target="_blank"><span class="fn">Balazs Nadasdi</span></a></span>
+
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-24T00:03:00+01:00" pubdate data-updated="true">Feb 24<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/css/'>css</a>, <a class='category' href='/blog/categories/sucks/'>sucks</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family/" data-via="yitsushi" data-counturl="http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/02/21/googleplus-beagyazasa-octopress-be/" title="Previous Post: Google+ beágyazása Octopress-be">&laquo; Google+ beágyazása Octopress-be</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -326,7 +330,10 @@ Feb 21 2013 kategóra: google+, &hellip;">
       var disqus_shortname = 'devfolyaminfo';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family/';
+        var disqus_url = 'http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

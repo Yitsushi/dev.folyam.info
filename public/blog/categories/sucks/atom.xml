@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Kategória: sucks | [Dev] Folyam.info]]></title>
+  <link href="http://dev.folyam.info/blog/categories/sucks/atom.xml" rel="self"/>
+  <link href="http://dev.folyam.info/"/>
+  <updated>2013-02-24T00:41:36+01:00</updated>
+  <id>http://dev.folyam.info/</id>
+  <author>
+    <name><![CDATA[Balazs Nadasdi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Android + css:font-family]]></title>
+    <link href="http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family/"/>
+    <updated>2013-02-24T00:03:00+01:00</updated>
+    <id>http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://folyam.info.s3.amazonaws.com/2013-02-24-android-plus-css-font-family/pt_sans.jpeg" width="190" title="&#34;PT Sans&#34;" alt="&#34;PT Sans&#34;"></p>
+
+<p>Hogyan is működik a CSS-ben a <code>font-family</code>? Megadsz jópár fontot, amit használni szeretnél.
+Ha az első, amit megadtál, nem jó, akkor a böngésző használja a másodikat, és ha az sem jó,
+akkor a harmadikat. Legalábbis így kellene, hogy működjon. A legtöbb böngészőben már évek
+óta így oldható meg az, hogy ha egy betűtípus nem elérhető, akkor használjon mást.
+Az Android beépített böngészője is így gondolja?</p>
+
+<!--more-->
+
+
+<p><em><del><small>A nagy lófa</small></del></em> Nem. Az alap Android böngésző, ha az első fontot
+megtalálja, és egy karakter nincs benne annak a karakterkészletében, akkor nem jeleníti
+meg. Így jártam a <a href="https://plus.google.com/u/0/105853491239853198987">+Folyam.info</a>
+és a <a href="https://plus.google.com/u/0/105613682641367710983">+[Dev] Folyam.info</a>
+oldalaknál is, ahol <code>PT Sans</code> és <code>PT Serif</code> volt használva. Mivel ezekben alapértelmezetten
+nincs <code>ő</code> és <code>ű</code> betű, így ebben a böngészőben nem jelentek meg ezek a betűk. Más böngészőnél
+nem biztos ezen hiba, például a
+<a href="https://play.google.com/store/apps/details?id=com.android.chrome">Chrome for Android</a>
+normálisan kezeli.</p>
+
+<p>Mi lett a következmény? Kiszedtem ezeket a betűtípusokat és hagytam a többit, ami
+<code>Helvetica Neue</code> és <code>Georgia</code>.</p>
+
+<p>A hiba felfedezéséért külön köszönet jár
+<a href="https://plus.google.com/u/0/104970190473967264780">+Ágoston Péter</a>nek. :)</p>
+]]></content>
+  </entry>
+  
+</feed>
