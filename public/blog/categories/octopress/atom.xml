@@ -4,7 +4,7 @@
   <title><![CDATA[Kategória: octopress | [Dev] Folyam.info]]></title>
   <link href="http://dev.folyam.info/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://dev.folyam.info/"/>
-  <updated>2013-02-24T09:15:58-05:00</updated>
+  <updated>2013-02-24T11:47:30-05:00</updated>
   <id>http://dev.folyam.info/</id>
   <author>
     <name><![CDATA[Balazs Nadasdi]]></name>
@@ -79,7 +79,7 @@ index 471b227..06aa580 100644
 változót használja, hanem az <code>ENV["C9_PORT"]</code>-al dolgozik. A <code>server_host</code> megadása
 is azért kell, mert simán a <code>0.0.0.0</code>-ra nem engedi bindelni.</p>
 
-<h3>Előnézet</h3>
+<h3>Előnézet + deploy</h3>
 
 <p>Már csak be kell írni a termináljába, hogy <code>bundle install</code>, majd pedig <code>rake preview</code>.
 Nem túl bonyolult, ám annál hasznosabb, mert így csak belépsz a c9-re, megnyitod
