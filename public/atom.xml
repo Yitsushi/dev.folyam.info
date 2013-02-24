@@ -4,7 +4,7 @@
   <title><![CDATA[[Dev] Folyam.info]]></title>
   <link href="http://dev.folyam.info/atom.xml" rel="self"/>
   <link href="http://dev.folyam.info/"/>
-  <updated>2013-02-24T09:15:58-05:00</updated>
+  <updated>2013-02-24T17:59:25+01:00</updated>
   <id>http://dev.folyam.info/</id>
   <author>
     <name><![CDATA[Balazs Nadasdi]]></name>
@@ -16,9 +16,9 @@
   <entry>
     <title type="html"><![CDATA[Octopress blogolás c9-en]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/24/octopress-blogolas-c9-en/"/>
-    <updated>2013-02-24T08:35:00-05:00</updated>
+    <updated>2013-02-24T08:35:00+01:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/24/octopress-blogolas-c9-en</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg" width="200" title="&#34;C9.io - Cloud&#34;" alt="&#34;C9.io - Cloud&#34;"></p>
+    <content type="html"><![CDATA[<p><img class="left" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg" width="200" title="&#34;C9.io - Cloud&#34;" alt="&#34;C9.io - Cloud&#34;"></p>
 
 <p>A felhő alapú társadalom már viszonylag jól ki tudja szolgálni az igényeket.
 A legnagyobb ellenérvem mindig is a szakmám volt, mert nehéz volt elképzelni,
@@ -114,7 +114,7 @@ majd feltolod a szerverre. Ezt a bejegyzést is így írom.</p>
   <entry>
     <title type="html"><![CDATA[Android + css:font-family]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family/"/>
-    <updated>2013-02-24T00:03:00-05:00</updated>
+    <updated>2013-02-24T00:03:00+01:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://folyam.info.s3.amazonaws.com/2013-02-24-android-plus-css-font-family/pt_sans.jpeg" width="190" title="&#34;PT Sans&#34;" alt="&#34;PT Sans&#34;"></p>
 
@@ -148,7 +148,7 @@ normálisan kezeli.</p>
   <entry>
     <title type="html"><![CDATA[Google+ beágyazása Octopress-be]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/21/googleplus-beagyazasa-octopress-be/"/>
-    <updated>2013-02-21T00:48:00-05:00</updated>
+    <updated>2013-02-21T00:48:00+01:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/21/googleplus-beagyazasa-octopress-be</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-21-googleplus-beagyazasa-octopress-be/octopress.png" title="&#34;Octopress&#34;" alt="&#34;Octopress&#34;"></p>
 
@@ -238,7 +238,7 @@ Az időkorlátokon belül pedig adott időintervallumban frissítem a megjegyzé
   <entry>
     <title type="html"><![CDATA[Pár hasznos könyv (1. felvonás)]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/18/par-hasznos-konyv-node-dot-js/"/>
-    <updated>2013-02-18T11:27:00-05:00</updated>
+    <updated>2013-02-18T11:27:00+01:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/18/par-hasznos-konyv-node-dot-js</id>
     <content type="html"><![CDATA[<p>Rendszeresen fogok könyveket ajánlani, mert azok igencsak hasznosak. Ha valaki tanulni,
 akar, akkor az elérhető könyvek listája talán az egyik leghasznosabb dolog. Mivel én
@@ -311,7 +311,7 @@ most angol nyelvűek, de szeretettel várok magyar tartalmakat is.</p>
   <entry>
     <title type="html"><![CDATA[Weboldal Google Drive-ból]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/17/weboldal-google-drive-bol/"/>
-    <updated>2013-02-17T00:02:00-05:00</updated>
+    <updated>2013-02-17T00:02:00+01:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/17/weboldal-google-drive-bol</id>
     <content type="html"><![CDATA[<p>Végre eljött az idő. Hasonlóan, mint <a href="https://www.dropbox.com/home">Dropbox</a>-nál,
 a <a href="https://drive.google.com">Google Drive</a> is képes mostantól tartalmat kiszolgálni.
@@ -384,7 +384,7 @@ hivatkozást rá.</p>
   <entry>
     <title type="html"><![CDATA[URL rövidítő 1. rész]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/16/url-rovidito-1-resz/"/>
-    <updated>2013-02-16T12:09:00-05:00</updated>
+    <updated>2013-02-16T12:09:00+01:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/16/url-rovidito-1-resz</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-16-url-rovidito-1-resz/AngularJS-hogyan.png" title="&#34;AngularJS Hogyan&#34;" alt="&#34;AngularJS Hogyan&#34;"></p>
 
@@ -790,7 +790,7 @@ létrehozza nekünk a <code>$scope</code> alatt.</p>
   <entry>
     <title type="html"><![CDATA[CSS-ben :target?]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/15/css-ben-target/"/>
-    <updated>2013-02-15T17:56:00-05:00</updated>
+    <updated>2013-02-15T17:56:00+01:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/15/css-ben-target</id>
     <content type="html"><![CDATA[<p><img class="center" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-15-css-ben-target/gold.png"></p>
 
@@ -1276,7 +1276,7 @@ Milyen eset volt már, amikor ez nagyon hasznos lett volna?</p>
   <entry>
     <title type="html"><![CDATA[Röviden tömören]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/15/roviden-tomoren/"/>
-    <updated>2013-02-15T15:09:00-05:00</updated>
+    <updated>2013-02-15T15:09:00+01:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/15/roviden-tomoren</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-15-roviden-tomoren/where-everything-begins.jpeg" width="240" title="omg" alt="omg2"></p>
 

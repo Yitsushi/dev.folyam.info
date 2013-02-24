@@ -7,7 +7,7 @@ categories: [octopress, cloud, hogyan]
 image: http://folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg
 ---
 
-{% img left http://folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg 200 "C9.io - Cloud" %}
+{% img left http://dev.folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg 200 "C9.io - Cloud" %}
 
 A felhő alapú társadalom már viszonylag jól ki tudja szolgálni az igényeket.
 A legnagyobb ellenérvem mindig is a szakmám volt, mert nehéz volt elképzelni,
@@ -47,8 +47,8 @@ index 471b227..06aa580 100644
 +#server_port     = "4000"      # port for preview server eg. localhost:4000
 +server_host     = ENV["IP"] ||= "0.0.0.0"
 +server_port     = ENV["port"] ||= ENV["C9_PORT"] ||= "4000"
- 
- 
+
+
  desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
 @@ -79,7 +81,7 @@ task :preview do
    system "compass compile --css-dir #{source_dir}/stylesheets" unless File.exist?("#{source_dir}/stylesheets/screen.css")
@@ -56,7 +56,7 @@ index 471b227..06aa580 100644
    compassPid = Process.spawn("compass watch")
 -  rackupPid = Process.spawn("rackup --port #{server_port}")
 +  rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")
- 
+
    trap("INT") {
      [jekyllPid, compassPid, rackupPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
 
