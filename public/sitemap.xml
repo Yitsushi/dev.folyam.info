@@ -2,46 +2,50 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/15/roviden-tomoren/</loc>
-        <lastmod>2013-02-16T14:50:24+01:00</lastmod>
+        <lastmod>2013-02-24T08:02:42-05:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/15/css-ben-target/</loc>
-        <lastmod>2013-02-16T14:50:16+01:00</lastmod>
+        <lastmod>2013-02-24T08:02:42-05:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/16/url-rovidito-1-resz/</loc>
-        <lastmod>2013-02-16T14:44:07+01:00</lastmod>
+        <lastmod>2013-02-24T08:02:42-05:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/17/weboldal-google-drive-bol/</loc>
-        <lastmod>2013-02-17T10:43:20+01:00</lastmod>
+        <lastmod>2013-02-24T09:06:25-05:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/18/par-hasznos-konyv-node-dot-js/</loc>
-        <lastmod>2013-02-18T15:07:10+01:00</lastmod>
+        <lastmod>2013-02-24T08:02:42-05:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/21/googleplus-beagyazasa-octopress-be/</loc>
-        <lastmod>2013-02-21T18:17:53+01:00</lastmod>
+        <lastmod>2013-02-24T08:02:42-05:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family/</loc>
-        <lastmod>2013-02-24T01:17:10+01:00</lastmod>
+        <lastmod>2013-02-24T08:02:42-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://dev.folyam.info/blog/2013/02/24/octopress-blogolas-c9-en/</loc>
+        <lastmod>2013-02-24T09:15:03-05:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/archives/</loc>
-        <lastmod>2013-02-24T01:17:10+01:00</lastmod>
+        <lastmod>2013-02-24T09:15:03-05:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/blog/categories/</loc>
-        <lastmod>2013-02-24T01:17:10+01:00</lastmod>
+        <lastmod>2013-02-24T09:15:03-05:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/</loc>
-        <lastmod>2013-02-24T01:17:10+01:00</lastmod>
+        <lastmod>2013-02-24T09:15:03-05:00</lastmod>
     </url>
     <url>
         <loc>http://dev.folyam.info/robots.txt</loc>
-        <lastmod>2013-02-15T15:39:04+01:00</lastmod>
+        <lastmod>2013-02-24T08:02:43-05:00</lastmod>
     </url>
 </urlset>

@@ -4,7 +4,7 @@
   <title><![CDATA[[Dev] Folyam.info]]></title>
   <link href="http://dev.folyam.info/atom.xml" rel="self"/>
   <link href="http://dev.folyam.info/"/>
-  <updated>2013-02-24T01:17:25+01:00</updated>
+  <updated>2013-02-24T09:15:58-05:00</updated>
   <id>http://dev.folyam.info/</id>
   <author>
     <name><![CDATA[Balazs Nadasdi]]></name>
@@ -14,9 +14,107 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Octopress blogolás c9-en]]></title>
+    <link href="http://dev.folyam.info/blog/2013/02/24/octopress-blogolas-c9-en/"/>
+    <updated>2013-02-24T08:35:00-05:00</updated>
+    <id>http://dev.folyam.info/blog/2013/02/24/octopress-blogolas-c9-en</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg" width="200" title="&#34;C9.io - Cloud&#34;" alt="&#34;C9.io - Cloud&#34;"></p>
+
+<p>A felhő alapú társadalom már viszonylag jól ki tudja szolgálni az igényeket.
+A legnagyobb ellenérvem mindig is a szakmám volt, mert nehéz volt elképzelni,
+hogy lesz normális felhő alapú IDE. Hogy őszinte legyek még most sincs, de már
+alakul. Mivel a <a href="http://octopress.org/">blogmotor</a>, amit használok, elsősorban
+a gépemet igényli. Nem olyan, mint mondjuk a <a href="http://www.blogger.com/">Blogger</a>
+vagy a <a href="http://wordpress.com/">Wordpress</a>, viszont előfodult már, hogy nem volt a
+közelemben a gépem, de írtam volna egy cikket. Hogy lehet ezt megoldani?</p>
+
+<!--more-->
+
+
+<h3>Mi az a c9.io?</h3>
+
+<p>A <a href="https://c9.io/">c9.io</a> egy olyan webes megoldás, ahol kapsz a böngésződbe
+egy szép szerkesztőt. Ha nem is szép, akkor legalább szerkesztő. Tud
+kódkiegészítést, sok nyelvet támogat, <a href="https://github.com">Github</a> és
+<a href="https://bitbucket.org/">Bitbucket</a> kapcsolattal rendelkezik, de beránthatsz
+saját <a href="http://git-scm.com/">git</a> repot is.</p>
+
+<h3>Akkor jöjjön a reszelés</h3>
+
+<p>Mivel alapértelmezetten tudod futtatni dev módban, amit csinálsz, így végképp
+kényelmes. Természetesen nem simán a megszokott <code>PORT</code> környezeti változót használja,
+így kicsit módosítani kell a rendszeren. Jelen esetben egyetlen fájlt kell módosítani,
+ami nem más mint a <code>Rakefile</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='diff'><span class='line'><span class="gh">diff --git a/Rakefile b/Rakefile</span>
+</span><span class='line'><span class="gh">index 471b227..06aa580 100644</span>
+</span><span class='line'><span class="gd">--- a/Rakefile</span>
+</span><span class='line'><span class="gi">+++ b/Rakefile</span>
+</span><span class='line'><span class="gu">@@ -25,7 +25,9 @@ posts_dir       = &quot;_posts&quot;    # directory for blog files</span>
+</span><span class='line'> themes_dir      = &quot;.themes&quot;   # directory for blog files
+</span><span class='line'> new_post_ext    = &quot;markdown&quot;  # default new post file extension when using the new_post task
+</span><span class='line'> new_page_ext    = &quot;markdown&quot;  # default new page file extension when using the new_page task
+</span><span class='line'><span class="gd">-server_port     = &quot;4000&quot;      # port for preview server eg. localhost:4000</span>
+</span><span class='line'><span class="gi">+#server_port     = &quot;4000&quot;      # port for preview server eg. localhost:4000</span>
+</span><span class='line'><span class="gi">+server_host     = ENV[&quot;IP&quot;] ||= &quot;0.0.0.0&quot;</span>
+</span><span class='line'><span class="gi">+server_port     = ENV[&quot;port&quot;] ||= ENV[&quot;C9_PORT&quot;] ||= &quot;4000&quot;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'> desc &quot;Initial setup for Octopress: copies the default theme into the path of Jekyll&#39;s generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]&quot;
+</span><span class='line'><span class="gu">@@ -79,7 +81,7 @@ task :preview do</span>
+</span><span class='line'>   system &quot;compass compile --css-dir #{source_dir}/stylesheets&quot; unless File.exist?(&quot;#{source_dir}/stylesheets/screen.css&quot;)
+</span><span class='line'>   jekyllPid = Process.spawn({&quot;OCTOPRESS_ENV&quot;=&gt;&quot;preview&quot;}, &quot;jekyll --auto&quot;)
+</span><span class='line'>   compassPid = Process.spawn(&quot;compass watch&quot;)
+</span><span class='line'><span class="gd">-  rackupPid = Process.spawn(&quot;rackup --port #{server_port}&quot;)</span>
+</span><span class='line'><span class="gi">+  rackupPid = Process.spawn(&quot;rackup --host #{server_host} --port #{server_port}&quot;)</span>
+</span><span class='line'>
+</span><span class='line'>   trap(&quot;INT&quot;) {
+</span><span class='line'>     [jekyllPid, compassPid, rackupPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Erre azért van szükség, mert mint említettem a c9 nem a megszokott <code>ENV["PORT"]</code>
+változót használja, hanem az <code>ENV["C9_PORT"]</code>-al dolgozik. A <code>server_host</code> megadása
+is azért kell, mert simán a <code>0.0.0.0</code>-ra nem engedi bindelni.</p>
+
+<h3>Előnézet</h3>
+
+<p>Már csak be kell írni a termináljába, hogy <code>bundle install</code>, majd pedig <code>rake preview</code>.
+Nem túl bonyolult, ám annál hasznosabb, mert így csak belépsz a c9-re, megnyitod
+a projektet és már írhatod is az új bejegyzést. Ha kész, akkor simán kezeled
+git-el. Generálsz, hozzáadod a fájlokat, hogy kommitolj, majd kommitolsz,
+majd feltolod a szerverre. Ezt a bejegyzést is így írom.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Android + css:font-family]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family/"/>
-    <updated>2013-02-24T00:03:00+01:00</updated>
+    <updated>2013-02-24T00:03:00-05:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/24/android-plus-css-font-family</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://folyam.info.s3.amazonaws.com/2013-02-24-android-plus-css-font-family/pt_sans.jpeg" width="190" title="&#34;PT Sans&#34;" alt="&#34;PT Sans&#34;"></p>
 
@@ -50,7 +148,7 @@ normálisan kezeli.</p>
   <entry>
     <title type="html"><![CDATA[Google+ beágyazása Octopress-be]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/21/googleplus-beagyazasa-octopress-be/"/>
-    <updated>2013-02-21T00:48:00+01:00</updated>
+    <updated>2013-02-21T00:48:00-05:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/21/googleplus-beagyazasa-octopress-be</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-21-googleplus-beagyazasa-octopress-be/octopress.png" title="&#34;Octopress&#34;" alt="&#34;Octopress&#34;"></p>
 
@@ -140,7 +238,7 @@ Az időkorlátokon belül pedig adott időintervallumban frissítem a megjegyzé
   <entry>
     <title type="html"><![CDATA[Pár hasznos könyv (1. felvonás)]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/18/par-hasznos-konyv-node-dot-js/"/>
-    <updated>2013-02-18T11:27:00+01:00</updated>
+    <updated>2013-02-18T11:27:00-05:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/18/par-hasznos-konyv-node-dot-js</id>
     <content type="html"><![CDATA[<p>Rendszeresen fogok könyveket ajánlani, mert azok igencsak hasznosak. Ha valaki tanulni,
 akar, akkor az elérhető könyvek listája talán az egyik leghasznosabb dolog. Mivel én
@@ -213,7 +311,7 @@ most angol nyelvűek, de szeretettel várok magyar tartalmakat is.</p>
   <entry>
     <title type="html"><![CDATA[Weboldal Google Drive-ból]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/17/weboldal-google-drive-bol/"/>
-    <updated>2013-02-17T00:02:00+01:00</updated>
+    <updated>2013-02-17T00:02:00-05:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/17/weboldal-google-drive-bol</id>
     <content type="html"><![CDATA[<p>Végre eljött az idő. Hasonlóan, mint <a href="https://www.dropbox.com/home">Dropbox</a>-nál,
 a <a href="https://drive.google.com">Google Drive</a> is képes mostantól tartalmat kiszolgálni.
@@ -286,7 +384,7 @@ hivatkozást rá.</p>
   <entry>
     <title type="html"><![CDATA[URL rövidítő 1. rész]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/16/url-rovidito-1-resz/"/>
-    <updated>2013-02-16T12:09:00+01:00</updated>
+    <updated>2013-02-16T12:09:00-05:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/16/url-rovidito-1-resz</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-16-url-rovidito-1-resz/AngularJS-hogyan.png" title="&#34;AngularJS Hogyan&#34;" alt="&#34;AngularJS Hogyan&#34;"></p>
 
@@ -692,7 +790,7 @@ létrehozza nekünk a <code>$scope</code> alatt.</p>
   <entry>
     <title type="html"><![CDATA[CSS-ben :target?]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/15/css-ben-target/"/>
-    <updated>2013-02-15T17:56:00+01:00</updated>
+    <updated>2013-02-15T17:56:00-05:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/15/css-ben-target</id>
     <content type="html"><![CDATA[<p><img class="center" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-15-css-ben-target/gold.png"></p>
 
@@ -1178,7 +1276,7 @@ Milyen eset volt már, amikor ez nagyon hasznos lett volna?</p>
   <entry>
     <title type="html"><![CDATA[Röviden tömören]]></title>
     <link href="http://dev.folyam.info/blog/2013/02/15/roviden-tomoren/"/>
-    <updated>2013-02-15T15:09:00+01:00</updated>
+    <updated>2013-02-15T15:09:00-05:00</updated>
     <id>http://dev.folyam.info/blog/2013/02/15/roviden-tomoren</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://dev.folyam.info.s3.amazonaws.com/2013-02-15-roviden-tomoren/where-everything-begins.jpeg" width="240" title="omg" alt="omg2"></p>
 

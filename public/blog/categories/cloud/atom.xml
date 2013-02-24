@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Kategória: cloud | [Dev] Folyam.info]]></title>
+  <link href="http://dev.folyam.info/blog/categories/cloud/atom.xml" rel="self"/>
+  <link href="http://dev.folyam.info/"/>
+  <updated>2013-02-24T09:15:58-05:00</updated>
+  <id>http://dev.folyam.info/</id>
+  <author>
+    <name><![CDATA[Balazs Nadasdi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress blogolás c9-en]]></title>
+    <link href="http://dev.folyam.info/blog/2013/02/24/octopress-blogolas-c9-en/"/>
+    <updated>2013-02-24T08:35:00-05:00</updated>
+    <id>http://dev.folyam.info/blog/2013/02/24/octopress-blogolas-c9-en</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg" width="200" title="&#34;C9.io - Cloud&#34;" alt="&#34;C9.io - Cloud&#34;"></p>
+
+<p>A felhő alapú társadalom már viszonylag jól ki tudja szolgálni az igényeket.
+A legnagyobb ellenérvem mindig is a szakmám volt, mert nehéz volt elképzelni,
+hogy lesz normális felhő alapú IDE. Hogy őszinte legyek még most sincs, de már
+alakul. Mivel a <a href="http://octopress.org/">blogmotor</a>, amit használok, elsősorban
+a gépemet igényli. Nem olyan, mint mondjuk a <a href="http://www.blogger.com/">Blogger</a>
+vagy a <a href="http://wordpress.com/">Wordpress</a>, viszont előfodult már, hogy nem volt a
+közelemben a gépem, de írtam volna egy cikket. Hogy lehet ezt megoldani?</p>
+
+<!--more-->
+
+
+<h3>Mi az a c9.io?</h3>
+
+<p>A <a href="https://c9.io/">c9.io</a> egy olyan webes megoldás, ahol kapsz a böngésződbe
+egy szép szerkesztőt. Ha nem is szép, akkor legalább szerkesztő. Tud
+kódkiegészítést, sok nyelvet támogat, <a href="https://github.com">Github</a> és
+<a href="https://bitbucket.org/">Bitbucket</a> kapcsolattal rendelkezik, de beránthatsz
+saját <a href="http://git-scm.com/">git</a> repot is.</p>
+
+<h3>Akkor jöjjön a reszelés</h3>
+
+<p>Mivel alapértelmezetten tudod futtatni dev módban, amit csinálsz, így végképp
+kényelmes. Természetesen nem simán a megszokott <code>PORT</code> környezeti változót használja,
+így kicsit módosítani kell a rendszeren. Jelen esetben egyetlen fájlt kell módosítani,
+ami nem más mint a <code>Rakefile</code>.</p>
+
+<p>``` diff
+diff --git a/Rakefile b/Rakefile
+index 471b227..06aa580 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -25,7 +25,9 @@ posts_dir       = "_posts"    # directory for blog files
+ themes_dir      = ".themes"   # directory for blog files
+ new_post_ext    = "markdown"  # default new post file extension when using the new_post task
+ new_page_ext    = "markdown"  # default new page file extension when using the new_page task
+-server_port     = "4000"      # port for preview server eg. localhost:4000
++#server_port     = "4000"      # port for preview server eg. localhost:4000
++server_host     = ENV["IP"] ||= "0.0.0.0"
++server_port     = ENV["port"] ||= ENV["C9_PORT"] ||= "4000"</p>
+
+<p> desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
+@@ -79,7 +81,7 @@ task :preview do
+   system "compass compile --css-dir #{source_dir}/stylesheets" unless File.exist?("#{source_dir}/stylesheets/screen.css")
+   jekyllPid = Process.spawn({"OCTOPRESS_ENV"=>"preview"}, "jekyll --auto")
+   compassPid = Process.spawn("compass watch")
+-  rackupPid = Process.spawn("rackup --port #{server_port}")
++  rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")</p>
+
+<p>   trap("INT") {</p>
+
+<pre><code> [jekyllPid, compassPid, rackupPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
+</code></pre>
+
+<p>```</p>
+
+<p>Erre azért van szükség, mert mint említettem a c9 nem a megszokott <code>ENV["PORT"]</code>
+változót használja, hanem az <code>ENV["C9_PORT"]</code>-al dolgozik. A <code>server_host</code> megadása
+is azért kell, mert simán a <code>0.0.0.0</code>-ra nem engedi bindelni.</p>
+
+<h3>Előnézet</h3>
+
+<p>Már csak be kell írni a termináljába, hogy <code>bundle install</code>, majd pedig <code>rake preview</code>.
+Nem túl bonyolult, ám annál hasznosabb, mert így csak belépsz a c9-re, megnyitod
+a projektet és már írhatod is az új bejegyzést. Ha kész, akkor simán kezeled
+git-el. Generálsz, hozzáadod a fájlokat, hogy kommitolj, majd kommitolsz,
+majd feltolod a szerverre. Ezt a bejegyzést is így írom.</p>
+]]></content>
+  </entry>
+  
+</feed>

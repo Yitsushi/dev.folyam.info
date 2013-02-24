@@ -3,7 +3,7 @@ layout: post
 title: "Weboldal Google Drive-ból"
 date: 2013-02-17 00:02
 comments: true
-categories: [google, html, ticks, hogyan]
+categories: [google, html, tricks, hogyan]
 image: http://dev.folyam.info.s3.amazonaws.com/2013-02-17-weboldal-google-drive-bol/open-with-preview.png
 ---
 
