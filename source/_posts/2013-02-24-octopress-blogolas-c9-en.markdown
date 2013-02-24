@@ -66,7 +66,7 @@ Erre azért van szükség, mert mint említettem a c9 nem a megszokott `ENV["POR
 változót használja, hanem az `ENV["C9_PORT"]`-al dolgozik. A `server_host` megadása
 is azért kell, mert simán a `0.0.0.0`-ra nem engedi bindelni.
 
-### Előnézet
+### Előnézet + deploy
 
 Már csak be kell írni a termináljába, hogy `bundle install`, majd pedig `rake preview`.
 Nem túl bonyolult, ám annál hasznosabb, mert így csak belépsz a c9-re, megnyitod
