@@ -11,6 +11,6 @@ source/_stash
 source/stylesheets/screen.css
 vendor
 node_modules
-.gplus-cache
+#.gplus-cache
 tmp
 .c9revisions
