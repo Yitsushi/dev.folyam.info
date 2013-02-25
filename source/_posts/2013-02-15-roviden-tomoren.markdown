@@ -7,7 +7,7 @@ categories: general
 image: http://dev.folyam.info.s3.amazonaws.com/2013-02-15-roviden-tomoren/where-everything-begins.jpeg
 ---
 
-{% img left http://dev.folyam.info.s3.amazonaws.com/2013-02-15-roviden-tomoren/where-everything-begins.jpeg 240 "omg" "omg2" %}
+{% img left http://dev.folyam.info.s3.amazonaws.com/2013-02-15-roviden-tomoren/where-everything-begins.jpeg 240 "Valahol újra kell kezdeni" %}
 
 Sokkal tartozom nektek, mert jó pár dolog volt, amire mondtam, hogy írok róla, csak majd később.
 Erőt vettem magamon és miután rájöttem, hogy soha nem lesz időm ennyi videótartalom legyártásához,
