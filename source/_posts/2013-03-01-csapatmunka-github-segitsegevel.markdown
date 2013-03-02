@@ -199,7 +199,7 @@ gombot.
 
 {% img center http://dev.folyam.info.s3.amazonaws.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-request.png Github Pull Request %}
 
-* Miután belüldtük a kérelmünket, megjelenünk az eredeti repó "pull requests" oldalán.
+* Miután beküldtük a kérelmünket, megjelenünk az eredeti repó "pull requests" oldalán.
 Megjelenik mint "pull request" és mint "issue".
 
 {% img center http://dev.folyam.info.s3.amazonaws.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-request-sent.png Github Pull Request: 1 commit %}
@@ -215,7 +215,7 @@ Mi van akkor, ha te vagy a repó tulajdonosa?
 [Két lehetőség van beolvasztani](https://help.github.com/articles/merging-a-pull-request)
 a beérkező módosításokat:
 
-* **Beolvasztás Github-on:** A fent Github-on szeretnénk beolvasztani, akkor előtte
+* **Beolvasztás Github-on:** Ha Github-on szeretnénk beolvasztani, akkor előtte
 meg kell bizonyosodni róla, hogy nincs semmilyen akadály. Tehát nincs `conflict` és készen
 áll az egybeolvasztásra. Csak egyszerűen rá kell kattintani a "Merge Pull Request" gombra:
 
@@ -236,7 +236,7 @@ az adott projekten.
 
 ## Hibakövetés
 
-Github-on a hibakezelés köpontja az "Issues" fül alatt található. Annak ellenére, hogy
+Github-on a hibakezelés központja az "Issues" fül alatt található. Annak ellenére, hogy
 a problémák nevet viseli, három különböző típus van:
 
 * **Hibák:** Hibák, amiket javítani kell
@@ -306,8 +306,8 @@ töröltek.
 ### Network
 
 A [Github Network](https://github.com/blog/39-say-hello-to-the-network-graph-visualizer)
-is egy nagyon hasznos, mert lehet rajta látni, hogy hol milyen ágak vannak. Ki hol tart,
-hol lettek összeolvasztva az ágak és ki honnan dolgozik, melyik ágból csinált magnának
+is egy nagyon hasznos segítség, mert lehet rajta látni, hogy hol milyen ágak vannak. Ki hol
+tart, hol lettek összeolvasztva az ágak és ki honnan dolgozik, melyik ágból csinált magnának
 másolatot és hol szállt be. Minden ág, minden commit-ja  látható rajta.
 
 {% img center http://dev.folyam.info.s3.amazonaws.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-network.png Branch és Fork hálózat %}
