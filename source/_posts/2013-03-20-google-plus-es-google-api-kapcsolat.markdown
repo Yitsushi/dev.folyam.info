@@ -3,7 +3,7 @@ layout: post
 title: "Google+ és Google API kapcsolat"
 date: 2013-03-20 1:08
 comments: true
-categories: [google+, api, google, javascript]
+categories: [google+, api, google, javascript, hogyan]
 image: http://dev.folyam.info.s3.amazonaws.com/2013-03-20-google-plus-es-google-api-kapcsolat/sign-in-button.jpg
 ---
 
