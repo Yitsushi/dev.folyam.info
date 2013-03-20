@@ -4,7 +4,7 @@ title: "Octopress blogolás c9-en"
 date: 2013-02-24 08:35
 comments: true
 categories: [octopress, cloud, hogyan]
-image: http://folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg
+image: http://dev.folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg
 ---
 
 {% img left http://dev.folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg 200 "C9.io - Cloud" %}
