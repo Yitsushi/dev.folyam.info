@@ -33,7 +33,7 @@ app.configure(function() {
   // a PUT és DELETE megnevezésű HTTP metódusokat
   // akkor ez elengethetetlen
   app.use(express.methodOverride());
-  // A cookie-k kezeléséhez használt is engedélyezzük
+  // A cookie-k használatát is engedélyezzük
   // és állítsunk be hozzá valami véletlenszerűen generált
   // salt-ot
   app.use(express.cookieParser('pramboshnypDicOmLertevNocgocUn'));

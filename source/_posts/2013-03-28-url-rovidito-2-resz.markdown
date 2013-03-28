@@ -10,12 +10,12 @@ image: http://dev.folyam.info.s3.amazonaws.com/2013-03-28-url-rovidito-2-resz/ti
 {% img left http://dev.folyam.info.s3.amazonaws.com/2013-03-28-url-rovidito-2-resz/tiny-cat-in-a-shell.jpg 400 Node.js Hogyan %}
 
 Egy jó ideje volt már annak, hogy kikerült az első fejezet. Most úgy döntöttem, hogy
-mindenképpen lesz rá idóm, akármi jöhet közbe, ma készen lesz a második rész is. Mi
+mindenképpen lesz rá időm, akármi jöhet közbe, ma készen lesz a második rész is. Mi
 következik? És miért van ott az a macska? Az
 [előző részben](/blog/2013/02/16/url-rovidito-1-resz/) csináltunk egy primitív URL rövidítő
 oldalt pusztán HTML, CSS és [AngularJS](http://angularjs.org/) _(JavaScript)_ használatával.
 Mielőtt tovább haladnánk, kellene hozzá valami háttér, ahol tárolva lesznek az URL-ek,
-ahol esetleg tudjuk rátolni, hogy mennyi kattintás történt. Tehát építsünk mögé egy
+ahol esetleg tudjuk tárolni, hogy mennyi kattintás történt. Tehát építsünk mögé egy
 [Node.js](http://nodejs.org/) keretet, ahogy azt már az előző részben is előre vetítettem.
 De mi is ez egyáltalán? És még most sem tudod miért van ott a kiscica?
 
@@ -48,7 +48,7 @@ kell hozzá.
 ### Bemelegítés
 
 Hogy értehtőbb legyen, hogy mi is ez csináljunk egy gyors _"weboldalt"_, ami szinte
-semmit se csinál, ha megmondja nekünk, hogy péntek van-e és ha nincs, akkor azt is, hogy
+semmit se csinál, csak megmondja nekünk, hogy péntek van-e és ha nincs, akkor azt is, hogy
 hány nap van még addig.
 
 {% include_code Bemelegítő weboldal 2013-03-28-url-rovidito-2-resz/bemelegito/app.js %}
@@ -59,10 +59,10 @@ Mit is jelent ez? Nézzük részletekben.
 
 Először is találkozunk egy `require` sorral, ami
 sokat lesz használva. A `require` betölt nekünk egy libet vagy csak egy fájlt, de ezt a
-neve is jól mutatja. Itt már is megállnék egy kicsit. Összességében 3 lehetőség van, amikor
+neve is jól mutatja. Itt máris megállnék egy kicsit. Összességében 3 lehetőség van, amikor
 betöltünk egy külső JavaScript fájlt.
 
-1. Simán beírjuk a lib nevét és az egy beépített lib, így nem kíván mást teendőt,
+1. Simán beírjuk a lib nevét és az egy beépített lib, így nem kíván más teendőt,
 csak betöltöd és használod.
 
 2. Simán beírjuk a lib nevét és az egy külső _(3rd party)_ lib. Ezeket telepíteni kell.
@@ -121,7 +121,7 @@ hanyadik napja van. A számozása nem "magyarbarát", mert 0-val jelöli a vasá
 ```
 
 Ebből eredően az 5-ös szám jelöli a pénteket. Ha az aktuális nap az 5. indexen helyeszkedik
-el, akkor péntek van. Ismét a `res` objektumhoz nyúlunk, hogy a komunikálni kivánt adatot
+el, akkor péntek van. Ismét a `res` objektumhoz nyúlunk, hogy a kommunikálni kívánt adatot
 eljuttassuk a kliensnek. Most az `end` metódusát hívjuk meg, mert nem is lesz más, tehát
 le is lehet zárni. A későbbi sok `else-if-else-if` szórakozást elkerülve vissza is térünk
 ennek a kimenetével. Az, hogy ez a függvény mivel tér vissza, az teljesen mindegy, de
@@ -173,19 +173,19 @@ használva ugyan úgy csinál nekünk egy webszervert, csak épp van benne Routi
 session kezelés és nagyon jól pluginelhető. Nagyon sok jó "gyári" middleware van hozzá,
 mint például a `csrf` _(a neve jól mutatja mire való)_ vagy a `compress`, ami Gzip
 tömörítést teszi nekünk lehetővé, hogy minél kisebb legyen az adathalmaz, amit átküldünk
-a kliensnek. Persze ennél joval több külső kiegészítő van hozzá, mint például a
+a kliensnek. Persze ennél jóval több külső kiegészítő van hozzá, mint például a
 `connect-auth`, ami tulajdonképpen egy azonosítási rendszerrel egészíti ki a rendszert és
 nem is kicsit, hanem nagyon. A `connect-auth` segítségével HTTP Basic/Digest, Twitter,
 Facebook, Yahoo, Github, FourSquare, Janrain/RPX vagy bármilyen OAuth azonosítást tudunk
-pillanatok alatt bevarázsolni. _(Persze említhetném itt a `connect-jade` middleware-t is,
+pillanatok alatt bevarázsolni. (Persze említhetném itt a `connect-jade` middleware-t is,
 amit jómagam tákoltam össze, hogy a jade is támogatott legyen connect használata közben...
-Hopp meg is említettem ^^.)_
+Hopp meg is említettem [:)
 
 No de, mi nem is ezt fogjuk használni, hanem
 [TJ Holowaychuk](https://github.com/visionmedia) munkáját, ami a connect.js-re épülő
 [Express.js](http://expressjs.com/). Tulajdonképpen a lehető legjobb dolog volt az
-connect-re építkeznie, mert így a connect middleware-ek mind jók id is :) Ebben egy sokkal
-sokosabb Routing rendszer van, sokkal durvább kiegészítők érhetőek el és nagyon kezes
+connect-re építkeznie, mert így a connect middleware-ek mind jók itt is :) Ebben egy sokkal
+okosabb Routing rendszer van, sokkal durvább kiegészítők érhetőek el és nagyon kezes
 session kezelő jár hozzá.
 
 ### Akkor jöjjön, amire vártunk
@@ -205,14 +205,14 @@ A foly.am domainre már jóideje fáj a fogam, de nem olcsó így ezidáig nem s
 beszereznem, de ennek a nevét fogom most felhasználni a példában, mint alkalmazásnév.
 _(Ha valaki meg akar vele ajándékozni, akkor ne szerénykedjen nagyon fogok neki örülni)_
 
-Ez a fájl megmondja az `npm`-nek, hogz telepíteni kell az `express`, `jade`, `stylus`
+Ez a fájl megmondja az `npm`-nek, hogy telepíteni kell az `express`, `jade`, `stylus`
 és `mongoose` csomagokat.
 
 * **express:** A keretrendszer, amit használni fogunk.
-* **jade:** Express-nek kell valami, és a Jade az jó.
-* **stylus:** CSS helyett használatos. Én szeretem nagyon :) Most ezt se fogjuk használni.
+* **jade:** Express-nek kell valami template motor, és a Jade az jó.
+* **stylus:** CSS helyett használatos. Én szeretem nagyon :) Most ezt nem fogjuk használni.
 * **mongoose:** MongoDB lesz használva adatbázisnak és a mongoose nagy segítségünkre
-lesz ebben.
+lesz ebben, de ez se lesz most használva, majd legközelebb.
 
 Hogy később tudjon futni Heroku-n, csinálunk egy Procfile-t is, ami tartalmazza a
 processzeket _(pl: web dyno)_.
