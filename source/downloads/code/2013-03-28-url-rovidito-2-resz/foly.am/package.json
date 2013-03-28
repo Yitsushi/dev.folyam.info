@@ -1,0 +1,18 @@
+{
+  "name": "foly-am",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.0.0rc2",
+    "jade": "*",
+    "stylus": "*",
+    "mongoose": "3.5.4"
+  },
+  "engines":{
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  }
+}

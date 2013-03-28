@@ -187,3 +187,7 @@ létrehozza nekünk a `$scope` alatt.
 Egyelőre egy teljesen használhatatlan offline alkalmazást csináltunk, amibe be tudunk
 írni bármit és ahhoz ő csinál egy "rövid" címet. Az eddig elkészült rész
 [megtekinthető itt](/downloads/code/2013-02-16-url-rovidito-1-resz/index.html).
+
+#### Kapcsolódó linkek:
+
+* [URL rövidítő 2. rész](/blog/2013/03/28/url-rovidito-2-resz/)
