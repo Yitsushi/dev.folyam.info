@@ -4,10 +4,10 @@ title: "Octopress blogolás c9-en"
 date: 2013-02-24 08:35
 comments: true
 categories: [octopress, cloud, hogyan]
-image: http://dev.folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg
+image: http://s3-dev.folyam.info/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg
 ---
 
-{% img left http://dev.folyam.info.s3.amazonaws.com/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg 200 "C9.io - Cloud" %}
+{% img left http://s3-dev.folyam.info/2013-02-24-octopress-blogolas-c9-en/c9-cloud.jpeg 200 "C9.io - Cloud" %}
 
 A felhő alapú társadalom már viszonylag jól ki tudja szolgálni az igényeket.
 A legnagyobb ellenérvem mindig is a szakmám volt, mert nehéz volt elképzelni,
