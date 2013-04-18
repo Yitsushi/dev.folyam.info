@@ -99,6 +99,9 @@ delicious_count: 3
 disqus_short_name: "devfolyaminfo"
 disqus_show_comment_count: false
 
+# Google+ Comment
+google_comments: true
+
 # Google Analytics
 google_analytics_tracking_id: "UA-33446239-4"
 
