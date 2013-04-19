@@ -181,6 +181,16 @@ hanem valaki Google+-on továbbosztotta publikusan vagy simán csak az url-t meg
 Ezen kívül pedig a posztokra érkező kommenteket is láthatjuk és akár válaszolhatunk is
 rájuk kommentként, ami itt is és Google+-on is megjelenik.
 
+Van benne olyan opció is, hogy csak itt látható kommentként, de nem akarod megosztani
+Google+-on. A szűrés pedig zseniális :)
+
+{% blockquote Megjegyzés és megosztás, Google+ Comments %}
+  Te döntöd el, hogy a megjegyzésed csak itt jelenjen-e meg,
+  vagy a Google+ szolgáltatásban is.
+  Bárhogy is dönts, csak a kiválasztott személyek
+  és körök tagjai láthatják.
+{% endblockquote %}
+
 Remélem mielőbb bekerül a rendszerbe publikusként és nem kell ezen kis mókázás hozzá, de
 addig is ez egy nálam jól működő megoldás.
 
