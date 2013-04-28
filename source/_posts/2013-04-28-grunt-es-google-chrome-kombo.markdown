@@ -20,7 +20,7 @@ _A cikk alján link a teljes forrásra._
 
 ### Mi az a Grunt?
 
-Sokat nem fűznék hozzá, mert akit érdekel az úgy is utána néz. Mondjuk azt, hogy amolyan
+Sokat nem fűznék hozzá, mert akit érdekel az úgyis utána néz. Mondjuk azt, hogy amolyan
 [Rake](http://rake.rubyforge.org/) szerű dolog. Aki a Rake-et se ismeri annak akkor a
 [Make](http://www.gnu.org/software/make/manual/make.html)-hez hasonlítanám. Sőt nem is csak hasonlítanám, hanem
 kvázi annak a JavaScript-re ültetett változata. Feladatokat definiálhatunk, amiket – logikus módon – futtathatunk
@@ -76,7 +76,7 @@ Alkossuk meg most akkor gyorsan a JavaScript struktúrát is. Az `src` alatt van
 
 {% include_code src/js/app.js 2013-04-28-grunt-es-google-chrome-kombo/src/js/app.js %}
 
-Mivel nem biztos, hogy csak és kizárólag Angular.js-t fogunk használni így csinálunk mindennek az elején egy
+Mivel nem biztos, hogy csak és kizárólag Angular.js-t fogunk használni, így csinálunk mindennek az elején egy
 `Application` objektumot, aminek két kulcsa van: `angular` és `Controllers`. Az előbbi gyorsan kap is értéket
 az Angular.js alkalmazásunk keretében. Utóbbi alá fogjuk gyűjteni a kontrollereket.
 
@@ -105,8 +105,8 @@ objektumot. Készítünk tömböt `$scope`-ba a nekünk kellő objektumokkal.
 
 #### Adjunk hozzá egy kis stílust is
 
-Mivel valahogyan szeretnénk, hogy kinézzen így hozzuk létre a stíluslapokat is. Mint említettem Less-el készítjük majd.
-Ehhez előzsör is létrehozunk egy `app.less` fájlt, ami majd betölti azt ami nekünk kell.
+Mivel valahogyan szeretnénk, hogy kinézzen, így hozzuk létre a stíluslapokat is. Mint említettem Less-el készítjük majd.
+Ehhez először is létrehozunk egy `app.less` fájlt, ami majd betölti azt ami nekünk kell.
 
 {% include_code src/less/app.less lang:css 2013-04-28-grunt-es-google-chrome-kombo/src/less/app.less %}
 
@@ -125,7 +125,7 @@ Ez azért hasznos, mert később már csak `npm install`-al felrakhatóak a szü
 
 {% include_code package.json 2013-04-28-grunt-es-google-chrome-kombo/package.json %}
 
-Most így minden benne van, ami kellhet így elég egy `npm install` kiadása. Természetesen kelleni fog nekünk a `grunt` is
+Most így minden benne van, ami kellhet, így elég egy `npm install` kiadása. Természetesen kelleni fog nekünk a `grunt` is
 tehát, ha ez nincs telepítve, akkor telepítsük.
 
 Innentől kezdve működni fog a `grunt` parancs, ami semmit se csinál, mert nincs `Gruntfile.js`, ami megadná neki,
@@ -133,7 +133,7 @@ hogy mit kell csinálnia:
 
 {% include_code Gruntfile.js 2013-04-28-grunt-es-google-chrome-kombo/Gruntfile.js %}
 
-Node mit is csinál ez most nekünk? először is csinálunk egy `grunt` változót, mert ugye azt szeretnénk használni.
+Node mit is csinál ez most nekünk? Először is csinálunk egy `grunt` változót, mert ugye azt szeretnénk használni.
 Lehet máshogy is, de én így szeretem ^^. Majd betöltjük a `grunt-devtools` feladatlistát. Ez a leghasznosabb most
 nekünk. Enélkül is roppant hasznos lesz, de ezzel együtt egyenesen a mennyország. De erre majd később visszatérünk.
 
@@ -144,7 +144,7 @@ a `static/css/app.css` fájlba.
 
 Ezek után betöltjük a már kész feladatlistákat, amiknek most megadtuk a paramétereket és végül regisztrálunk egy
 feladatot `default` néven, ami akkor fog lefutni, ha nem adunk paramétert a `grunt`-nak, ami nem más mint a fenti
-három szépen sorban. Elöször begeneráljuk a CSS-t, majd a JS-t és vágül bemásoljuk a template-eket.
+három szépen sorban. Először begeneráljuk a CSS-t, majd a JS-t és végül bemásoljuk a template-eket.
 
 Most már ha kiadjuk a `grunt` parancsot, akkor az alábbi válasszal találkozunk:
 
@@ -161,7 +161,7 @@ Most már ha kiadjuk a `grunt` parancsot, akkor az alábbi válasszal találkozu
     Done, without errors.
 
 Ez eddig szép és jó, mert most már legalább egy helyen van minden és működik, amit csináltunk. De nem ez volt, ami miatt
-megírtam ezt a jó hosszűra sikerült cikket. Akkor?
+megírtam ezt a jó hosszúra sikerült cikket. Akkor?
 
 ### Google Chrome + Grunt
 
@@ -172,7 +172,7 @@ projektet.
 
 {% img left http://s3-dev.folyam.info.s3.amazonaws.com/2013-04-28-grunt-es-google-chrome-kombo/grunt-devtools-no-project-detected.png %}
 
-Már egszen közel járunk a végéhez :) Már csak a DevTools nem tud arról, hogy nekünk van Grunt fájlunk és abban
+Már egészen közel járunk a végéhez :) Már csak a DevTools nem tud arról, hogy nekünk van Grunt fájlunk és abban
 vannak feladatok is. Amik látszódnak a képen még kiegészítők, azokat tudom ajánlani, mert mindegyike nagyon hasznos.
 Főleg a [Tincr](https://chrome.google.com/webstore/detail/tincr/lfjbhpnjiajjgnjganiaggebdhhpnbih) és az
 [AngularJS Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk). Előbbi összeköti a fájlrendszert a böngészővel és amint módosítunk egy fájlon, akkor az frissíti a weboldalt, de ami
@@ -180,7 +180,7 @@ sokkal jobb, hogy amint módosítunk valamit a Chrome-ban, akkor mentésre kiír
 pedig nagyon szépen mutatja az Angulat.js-hez kötött scope változókat és megmutatja mi nem optimális, tehát mivel
 tölt sok időt a böngésző. Persze sokkal többre jó mind a kettő, de ez most nem a cikk célja.
 
-Mint, ahogyan azt elmondja nekünk az elénk táruló kép is, futtassunk le egy parancsot, hogy kommunikálni tudjon a
+Mint ahogyan azt elmondja nekünk az elénk táruló kép is, futtassunk le egy parancsot, hogy kommunikálni tudjon a
 projektünkkel, így összekötve a böngészőt a `Gruntfile.js`-ben leírt feladatlistával.
 
     $ grunt devtools
