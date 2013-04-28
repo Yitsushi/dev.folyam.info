@@ -1,0 +1,14 @@
+{
+  "name": "SampleGruntProject",
+  "version": "0.0.1",
+  "description": "Sample Grunt Project",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-devtools": "~0.1.0-7",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-less": "~0.5.1"
+  },
+  "author": "Balazs Nadasdi <yitsushi@gmail.com>",
+  "license": "BSD"
+}

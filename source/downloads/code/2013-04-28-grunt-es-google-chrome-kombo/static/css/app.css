@@ -1,0 +1,2 @@
+html,body{font:12px Arial;}
+.dialer{width:50%;border:1px solid #ddd;padding:10px;margin:0 auto;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;}.dialer ul{list-style:none;margin:0;padding:0;}.dialer ul li{width:300px;border-left:3px solid transparent;padding:3px;cursor:pointer;}.dialer ul li:hover{border-left-color:#a00;}
