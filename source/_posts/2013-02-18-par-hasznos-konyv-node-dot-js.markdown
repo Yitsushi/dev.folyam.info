@@ -78,6 +78,8 @@ mondjam, hogy nagyon megérte. Akit érdekel a téma, annak tényleg ajánlom.
 
 ### Van könyv, ami szerinted hasznos?
 
+{% include post/adsense_right.html %}
+
 Ha van olyan könyv, amely szerinted beillene egy ilyen bejegyzésbe, akkor küld el a
 linkjét pluszon nekem. Legegyszerűbb, ha megosztod a könyv linkjék, leírod mellé, hogy
 

@@ -28,6 +28,8 @@ ingyen. Ezen kívül futtathatsz háttérfolyamatokat úgynevezett `worker`-ekke
 
 ### Mit tudok futtatni Heroku alkalmazásként?
 
+{% include post/adsense_right.html %}
+
 Nagyjából bármit. Eleinte Ruby hosztingnak indult, aztán szépen kinőtte magát, így mára a Cedar Stack-nek köszönhetően
 Ruby, Java, Python, Clojure, Scala, [Node.js](/blog/categories/node-js) és Play az
 alapértelmezetten támogatott. Mivel létre lehet hozni úgynevezett `Buildpack`-eket, hatalmasra duzzadt a nyelvek

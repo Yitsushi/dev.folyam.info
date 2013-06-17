@@ -87,6 +87,8 @@ for (var i = 0; i < items.length; i++) {
 
 ### Hogyan mérjük?
 
+{% include post/adsense_right.html %}
+
 Persze nekiállhatnánk írni egy új banchmark eszközt, de minek, ha már van. A
 [Benchmark.js](http://benchmarkjs.com/) __(v1.0.0)__ elég jól működik, jól konfigurálható
 és mindemellett a [BestieJS](https://github.com/bestiejs) része.
@@ -230,6 +232,8 @@ Fastest is Vanilla old
 ```
 
 ### Értelmezés
+
+{% include post/adsense_right.html %}
 
 Az ops/sec minél nagyobb annál jobb. Minden esetben jól látható, hogy a legygyorsabb
 a régi jól bevált `getElementById` és `getElementsByClassName` használata volt közel

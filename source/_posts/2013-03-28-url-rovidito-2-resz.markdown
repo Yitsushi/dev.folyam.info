@@ -34,6 +34,8 @@ maximalizálására.
 
 _Az a using nem tudom mit keres ott, de hát ez csak egy idézet :)_
 
+{% include post/adsense_right.html %}
+
 Tehát az egész rendszereseményvezérelt, ahogyan azt már megszokhattuk a JavaScript-től.
 Elsősorban a Google féle V8 motorra épül, de sok más könyvtár került beolvasztásra. Innen
 már úgy érzem érthető, hogy mi is ez. Röviden: Server oldalon futtatható JavaScript.
@@ -158,6 +160,8 @@ megkapjuk az eredményt.
 
 ### Express.js (kis "történelem")
 
+{% include post/adsense_right.html %}
+
 Kicsit hosszú lenne és bonyolult minden kisebb oldalt felépíteni _(nagyobbakat méginkább)_
 a `http` lib használatával. Pontosabban úgy, hogy csak azt használjuk. Most gyorsan
 megismerkedünk az [Express.js](http://expressjs.com/)-el, ami egy keretrendszer, a
@@ -268,6 +272,8 @@ olyan oldalt kérnek, ami nincs.
 {% include_code Bemelegítő weboldal 2013-03-28-url-rovidito-2-resz/foly.am/views/error/404.jade %}
 
 ### Vége?
+
+{% include post/adsense_right.html %}
 
 Dehogy! Bár egyelőre igen. Ez a cikk elsősorban arra hivatott, hogy a hátteret megteremtsük
 a későbbi alkalmazásunknak. Így is elég hosszú cikk lett és nem akarok egyszerre több

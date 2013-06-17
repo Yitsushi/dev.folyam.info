@@ -44,6 +44,8 @@ lekezeltük az adatokat, majd átirányítottuk a felhasználót oda, ahova mi s
 
 ## Mi a mostani logika?
 
+{% include post/adsense_right.html %}
+
 Először is leszögezném, hogy szerény véleményem szerint a mobilpiacot kiszolgáló
 alkalmazások területén biztosan nagyon jó logika, de weben nem. Most kirakunk egy gombot.
 A gomb már önmagában indít egy validálási folyamatot, mivel amint lefut a hozzá kapcsolódó
@@ -191,6 +193,8 @@ _(sőt semmilyen interaktivitás nincs rajta... egyelőre)_ így minden érték 
 a részen.
 
 ## Végeredmény
+
+{% include post/adsense_right.html %}
 
 Végigszívhatod az egész napodat, hogy a marketingesek kérésére látható legyen az új
 bejelentkezési lehetőség _(nah jó azért Node.js-ben csináltam és ott se volt szörnyen

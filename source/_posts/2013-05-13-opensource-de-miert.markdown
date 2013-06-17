@@ -43,6 +43,8 @@ volt-e olyan, ami problémás volt, de megoldottad és persze, hogy miként.
 
 ### Kódpublikáció
 
+{% include post/adsense_right.html %}
+
 Van egy teljesen jól bevált technika arra, hogy mégis fel tudj mutatni valamit.
 Munkahelyedről nem hozhatsz ki forrást és nem is várka el tőled senki. Ha mégis, akkor
 inkább felejtsd el azt az embert. Viszont csinálhaszt kisebb projekteket, amiknek
@@ -93,6 +95,8 @@ van 10-15 commit-od egy másik projektben. Ez már csak azért is jó, mert igaz
 vele, hogy márpedig te csapatban is tudsz dolgozni. Ez is nagyon fontos szempont.
 
 ### Blogolj
+
+{% include post/adsense_right.html %}
 
 Ha végképp nincs erőd munka után még saját projektekbe kezdeni, még mindig megteheted, hogy
 akár anoním módon is, de leírod azokat a problémákat, amikkel szembesültél munkád során.

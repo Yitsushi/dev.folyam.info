@@ -59,6 +59,8 @@ Először is vegyünk egy jól megszokott html fájlt:
 
 {% include_code index.html 2013-04-28-grunt-es-google-chrome-kombo/index.html %}
 
+{% include post/adsense_right.html %}
+
 Elsőre feltűnhet két dolog. Első, hogy mindent abszolút adtam meg. Minden fejlesztéshez be szoktam lőni valami lokális
 címet, mint például ehhez a clockwork.dev címet. Host fájlt nem igazán piszkálok, sokkal inkább meg van adva
 [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)-nak, hogy minden `.dev` tld legyen `localhost` aztán már
@@ -136,6 +138,8 @@ hogy mit kell csinálnia:
 Node mit is csinál ez most nekünk? Először is csinálunk egy `grunt` változót, mert ugye azt szeretnénk használni.
 Lehet máshogy is, de én így szeretem ^^. Majd betöltjük a `grunt-devtools` feladatlistát. Ez a leghasznosabb most
 nekünk. Enélkül is roppant hasznos lesz, de ezzel együtt egyenesen a mennyország. De erre majd később visszatérünk.
+
+{% include post/adsense_right.html %}
 
 Ezek után definiáljuk az alap konfigurációt egy `uglify`-nek, ami a `js` fájlokat fogja nekünk összefűzni és tömöríteni.
 Ezek után a `copy`-nak adjuk meg, hogy mivel mit csináljon. Ez fogja nekünk bemásolni a helyükre a template fájlokat.

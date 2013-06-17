@@ -50,6 +50,8 @@ természetesen megoldható, hogy csak egy `class` megadásával a JavaScript vé
 elemeken és ad nekik egy számmal ellátott `id`-t, ahogyan ezt a `plusone.js` is csinálja
 a +1 gomboknál. Két paramétert használtam két egyszerű ok miatt.
 
+{% include post/adsense_right.html %}
+
 1. A Bloggeren is ezeket pakolja a html elemre, így valószínűleg ezek lesznek a
 későbbiekben is dinamikus paraméterek.
 2. A többi paraméter eléggé fix, tehát felesleges azokat is ide pakolni :)
@@ -174,6 +176,8 @@ Ezek után, ha ujratöltjük az oldalunkat, akkor miután a `plusone.js` betölt
 a jó kis kiegészítésünk, aminek hatására megjelenik a Google+ Comments doboz :)
 
 ### Végeredmény
+
+{% include post/adsense_right.html %}
 
 Van egy nagyon pofásan kinéző kommentrendszerünk, aminél minden hozzászólás egy Google+
 posztot jelent. Ami nagyon jó benne, hogy az is ide kerül, ami nem innen lett megosztva,
