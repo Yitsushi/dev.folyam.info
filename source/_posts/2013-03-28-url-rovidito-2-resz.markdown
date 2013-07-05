@@ -293,3 +293,4 @@ vagy vázba. Tehát lássátok tudok én is macskát és kiscicát is kirakni, d
 #### Kapcsolódó linkek:
 
 * [URL rövidítő 1. rész](/blog/2013/02/16/url-rovidito-1-resz/)
+* [URL rövidítő 3. rész](/blog/2013/07/05/url-rovidito-3-resz/)

@@ -191,3 +191,4 @@ Egyelőre egy teljesen használhatatlan offline alkalmazást csináltunk, amibe 
 #### Kapcsolódó linkek:
 
 * [URL rövidítő 2. rész](/blog/2013/03/28/url-rovidito-2-resz/)
+* [URL rövidítő 3. rész](/blog/2013/07/05/url-rovidito-3-resz/)
