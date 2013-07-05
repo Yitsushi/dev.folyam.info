@@ -278,7 +278,7 @@ amibe elmentjük az adatokat, persze előtte jól leteszteljük, hogy már léte
 #### Kapcsolódó linkek:
 
 A forrás elérhető itt:
-[https://bitbucket.org/folyam/url-r-vid-t](https://bitbucket.org/folyam/url-r-vid-t/src/51bbda60bdc3d1dae5851b6d9e5b3624130b186a/?at=v3.0)
+[https://bitbucket.org/folyam/url-r-vid-t](https://bitbucket.org/folyam/url-r-vid-t/src/?at=v3.0)
 
 * [URL rövidítő 1. rész](/blog/2013/02/16/url-rovidito-1-resz/)
 * [URL rövidítő 2. rész](/blog/2013/03/28/url-rovidito-2-resz/)
