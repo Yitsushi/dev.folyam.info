@@ -7,6 +7,7 @@ categories: [dropbox, api, hogyan, cloud, javascript]
 image: http://s3-dev.folyam.info.s3.amazonaws.com/2013-07-10-dropbox-datastore-konyvjelzo/developer-datastores-vfliUo8_8.png
 ---
 
+<small style="text-align: right; display: block; font-style: italic;">A képet a [Dropbox oldaláról](https://www.dropbox.com/developers/datastore) szedtem &#8595;</small>
 {% img center http://s3-dev.folyam.info.s3.amazonaws.com/2013-07-10-dropbox-datastore-konyvjelzo/developer-datastores-vfliUo8_8.png Dropbox Datastore%}
 
 [Megjelent egy új szolgáltatás a Dropbox](https://www.dropbox.com/developers/datastore)
