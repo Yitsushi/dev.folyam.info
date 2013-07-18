@@ -4,10 +4,10 @@ title: "Grunt és Chrome kombó"
 date: 2013-04-28 19:57
 comments: true
 categories: [chrome, grunt, javascript, less, css, hogyan]
-image: http://s3-dev.folyam.info.s3.amazonaws.com/2013-04-28-grunt-es-google-chrome-kombo/gruntjs-google-chrome.png
+image: http://s3-dev.folyam.info/2013-04-28-grunt-es-google-chrome-kombo/gruntjs-google-chrome.png
 ---
 
-{% img left http://s3-dev.folyam.info.s3.amazonaws.com/2013-04-28-grunt-es-google-chrome-kombo/gruntjs-google-chrome.png %}
+{% img left http://s3-dev.folyam.info/2013-04-28-grunt-es-google-chrome-kombo/gruntjs-google-chrome.png %}
 
 Manapság már egyre több lehetősége van az embernek, hogy ne – úgymond – nyers CSS és JavaScript
 írásával kelljen eltöltenie idejének nagy részét. Persze mindegyiknek megvan a hátránya
@@ -174,7 +174,7 @@ Most akkor telepítsük
 beépük a DevTools-ba és megjelenik egy új fül benne Grunt néven. Ide kattintva most még azt látjuk, hogy nem észlel
 projektet.
 
-{% img left http://s3-dev.folyam.info.s3.amazonaws.com/2013-04-28-grunt-es-google-chrome-kombo/grunt-devtools-no-project-detected.png %}
+{% img left http://s3-dev.folyam.info/2013-04-28-grunt-es-google-chrome-kombo/grunt-devtools-no-project-detected.png %}
 
 Már egészen közel járunk a végéhez :) Már csak a DevTools nem tud arról, hogy nekünk van Grunt fájlunk és abban
 vannak feladatok is. Amik látszódnak a képen még kiegészítők, azokat tudom ajánlani, mert mindegyike nagyon hasznos.
@@ -193,13 +193,13 @@ projektünkkel, így összekötve a böngészőt a `Gruntfile.js`-ben leírt fel
     Warning: Native modules not compiled.  UTF-8 validation disabled.
     >> Grunt Devtools v0.1.0-7 is ready! Proceed to the Chrome extension.
 
-{% img center http://s3-dev.folyam.info.s3.amazonaws.com/2013-04-28-grunt-es-google-chrome-kombo/grunt-devtools-task-list.png %}
+{% img center http://s3-dev.folyam.info/2013-04-28-grunt-es-google-chrome-kombo/grunt-devtools-task-list.png %}
 
 Láthatóan megjelent egy bal- és egy jobboldali rész az iménti semmi helyett. Baloldalt láthatjuk a feladatlistát,
 míg jobboldalt lesz majd a kimenet. Ha ezek után kiválasztunk egy feladatot és rákattintunk, ami például a `default`,
 akkor lefuttatja nekünk és kiírja a kimenetet.
 
-{% img center http://s3-dev.folyam.info.s3.amazonaws.com/2013-04-28-grunt-es-google-chrome-kombo/grunt-devtools-run-default-task.png %}
+{% img center http://s3-dev.folyam.info/2013-04-28-grunt-es-google-chrome-kombo/grunt-devtools-run-default-task.png %}
 
 Hasznos, mert így átírva mondjuk a JavaScript részt, miután végeztünk, elég lefuttatni az `uglify` feladatot. Ugyan így igaz az is, ha a template-eken módosítunk elég a copy feladatot futtatni és még csak el sem kell hagyni a böngészőt.
 

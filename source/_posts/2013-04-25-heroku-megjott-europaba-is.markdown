@@ -4,10 +4,10 @@ title: "Heroku megjött Európába is"
 date: 2013-04-25 05:54
 comments: true
 categories: [heroku, cloud]
-image: http://s3-dev.folyam.info.s3.amazonaws.com/2013-04-25-heroku-megjott-europaba-is/heroku-logo.png
+image: http://s3-dev.folyam.info/2013-04-25-heroku-megjott-europaba-is/heroku-logo.png
 ---
 
-{% img left http://s3-dev.folyam.info.s3.amazonaws.com/2013-04-25-heroku-megjott-europaba-is/heroku-logo.png 400 Heroku %}
+{% img left http://s3-dev.folyam.info/2013-04-25-heroku-megjott-europaba-is/heroku-logo.png 400 Heroku %}
 
 A [+Heroku](https://plus.google.com/u/0/114423390012692442615/about) elindította Európában is szervereit. Mostantól
 – bár egyelőre béta fázisban – létrehozhatóak olyan
@@ -78,7 +78,7 @@ Nem tudom ki hogyan van vele, de én elég gyakran csinálok olyan oldalakat, am
 Európa. Ebben az esetben elérésben lassabb egy US szerverről kiszolgálni ide a tartalmat, mint ha itt lenne Európában.
 Hogy mennyire?
 
-{% img center http://s3-dev.folyam.info.s3.amazonaws.com/2013-04-25-heroku-megjott-europaba-is/speed.png Heroku speed EU vs. US %}
+{% img center http://s3-dev.folyam.info/2013-04-25-heroku-megjott-europaba-is/speed.png Heroku speed EU vs. US %}
 
 A mellékelt grafikonon jól látszik, hogy egy EU régiós látogatónak átlagosan 250ms/req a válaszideje, míg
 egy EU régiós szerverről egy EU regiós látogatónak pusztán 100ms/req a "távolsága". Ha eddig nem foglalkoztál a
