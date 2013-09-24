@@ -2,7 +2,86 @@
   Add content to be output at the bottom of each page. (You might use this for analytics scripts, for example)
 {% endcomment %}
 <script type="text/javascript">
-  jQuery(document).ready(function() {
+  var Application = (function() {
+    var modules = {};
+    return {
+      delegate: function(name, callback) {
+        modules[name] = callback;
+      },
+      init: function() {
+        for (var name in modules) {
+          modules[name]();
+        }
+      }
+    }
+  }());
+
+  Application.delegate('external_link', function() {
     jQuery('a[href^="http://"], a[href^="https://"], a[href^="/downloads"]').attr('target', '_blank');
   });
+
+  Application.delegate('anti-adblock', function() {
+    var img = document.createElement('img');
+    img.onerror = function(e,f,g) {
+      var div = document.createElement('div');
+      div.innerHTML =  'Nem szeretem azokat, akik azt hiszik véletlenül raktam ki a reklámokat. ';
+      div.innerHTML += 'Én ebből próbálom minimálisan finanszírozni a későbbi működést. ';
+      div.innerHTML += 'Ha egy reklám túl durva, akkor kérlek jelezd, mert letiltom a hirdetőt. ';
+      div.innerHTML += 'Ha véletlenül flash tartalom töltődne be és az zavar, akkor le lehet azt is külön tiltani. ';
+      div.innerHTML += 'Ha nem tetszik reklámokkal az oldal, akkor lehet máshol is tartalmat találni.';
+      div.setAttribute('style', "color: #888; font-size: 1.3em; font-style: italic; padding-top: 40px; padding-bottom: 40px;");
+      var title = document.querySelector('.entry-title');
+      title.parentNode.insertBefore(div, title.nextSibling);
+    };
+    img.src = "http://www.adroll.com/i/marketing/sprites/common-sprite.png";
+  });
+
+  {% include google_plus_one.html %}
+
+  Application.delegate('facebook', function() {
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  });
+
+  (function() {
+    var javaScriptFiles = [
+      '{{ root_url }}/javascripts/libs/jquery-1.9.1.min.js',
+      '{{ root_url }}/javascripts/modernizr-2.0.js',
+      '{{ root_url }}/javascripts/ender.js',
+      '{{ root_url }}/javascripts/octopress.js',
+      'http://www.google.hu/coop/cse/brand?form=cse-search-box&lang=hu'
+    ];
+
+    function loadJavaScript(script, callback) {
+      var element = document.createElement("script");
+      element.src = script;
+      element.onload = script.onreadystatechange = callback;
+      document.body.appendChild(element);
+    }
+    function loadNext(callback) {
+      if (javaScriptFiles.length < 1) {
+        return callback(null, true);
+      }
+      var current = javaScriptFiles.shift();
+      loadJavaScript(current, function() {
+        loadNext(callback);
+      });
+    }
+    function downloadJSAtOnload() {
+      loadNext(Application.init);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener("load", downloadJSAtOnload, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onload", downloadJSAtOnload);
+    } else {
+      window.onload = downloadJSAtOnload;
+    }
+  }());
 </script>

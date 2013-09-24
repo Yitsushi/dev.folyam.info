@@ -10,22 +10,5 @@
   </div>
   <footer role="contentinfo">{% include footer.html %}</footer>
   {% include after_footer.html %}
-  <script type="text/javascript" charset="utf-8">
-    (function() {
-      var img = document.createElement('img');
-      img.onerror = function(e,f,g) {
-        var div = document.createElement('div');
-        div.innerHTML =  'Nem szeretem azokat, akik azt hiszik véletlenül raktam ki a reklámokat. ';
-        div.innerHTML += 'Én ebből próbálom minimálisan finanszírozni a későbbi működést. ';
-        div.innerHTML += 'Ha egy reklám túl durva, akkor kérlek jelezd, mert letiltom a hirdetőt. ';
-        div.innerHTML += 'Ha véletlenül flash tartalom töltődne be és az zavar, akkor le lehet azt is külön tiltani. ';
-        div.innerHTML += 'Ha nem tetszik reklámokkal az oldal, akkor lehet máshol is tartalmat találni.';
-        div.setAttribute('style', "color: #888; font-size: 1.3em; font-style: italic; padding-top: 40px; padding-bottom: 40px;");
-        var title = document.querySelector('.entry-title');
-        title.parentNode.insertBefore(div, title.nextSibling);
-      };
-      img.src = "http://www.adroll.com/i/marketing/sprites/common-sprite.png";
-    }());
-  </script>
 </body>
 </html>

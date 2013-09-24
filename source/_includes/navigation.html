@@ -13,15 +13,13 @@
     <!-- <input type="submit" name="sa" value="Search" /> -->
   </fieldset>
 </form>
-
-<script type="text/javascript" src="http://www.google.hu/coop/cse/brand?form=cse-search-box&amp;lang=hu"></script>
-<!--
+{% comment %}<!--
 <form action="{{ site.simple_search }}" method="get">
   <fieldset role="search">
     <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
     <input class="search" type="text" name="q" results="0" placeholder="Keresés"/>
   </fieldset>
 </form>
--->
+-->{% endcomment %}
   {% endif %}
 {% include custom/navigation.html %}
