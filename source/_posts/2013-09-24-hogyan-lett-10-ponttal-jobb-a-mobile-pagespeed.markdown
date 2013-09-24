@@ -9,7 +9,7 @@ image:
 
 {% img left http://s3-dev.folyam.info/2013-09-24-hogyan-lett-10-ponttal-jobb-a-mobile-pagespeed/DevSpeedUp.png 300 Dev SpeedUp %}
 
-Mapapság a mobil netezők száma igen nagy, ezért fontos, hogy gyorsan töltődjön be az
+Manapság a mobil netezők száma igen nagy, ezért fontos, hogy gyorsan töltődjön be az
 oldal. Mobil felületen még inkább szembetűnő, ha nem gyors a weboldal. Ott jobban fáj
 mindenkinek. Tudjuk jól, hogy a tartalom felszolgálása az elsődleges és hogy annak
 minél előbb ott kell lennie a kijelzőn. Pár napja írtam egy cikket az androgeek portálra
