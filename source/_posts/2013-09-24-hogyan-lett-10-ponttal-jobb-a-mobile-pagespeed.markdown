@@ -150,7 +150,7 @@ a fájllistát tartalmazó tömbből és azt betölti. Beállítja onLoad-ra ön
 betöltődött az első elem, akkor betölti a tömb első elemét újta, de ugye az előzőt
 kiszedtem már, így az eredetileg második elem lesz most az első. Az egész függvény persze
 úgy indul, hogy ha üres, akkor meghívja a paraméterben kapott callback függvényt, amit
-jelen esetben az eredetileg meghívott `downloadJSAtOnload` definiált és nem már, mint
+jelen esetben az eredetileg meghívott `downloadJSAtOnload` definiált és nem más, mint
 az `Application.init` meghívása.
 
 ``` javascript
