@@ -35,6 +35,8 @@ tartalom minek Google+ komment, +1, Facebook like meg minden egyéb.
 
 ### Alap JavaScript struktúra
 
+{% include post/adsense_right.html %}
+
 Mivel a legkevesebb ACK-t akarom elérni az oldal betöltéséig, így a legfontosabb
 scriptrészeket egyből beágyaztam az oldal aljába. Ez nem más, mint egy nagyon alap
 Application objektum, aminek van egy `delegate` és egy `init` függvénye. Ezen kívül pedig
@@ -138,6 +140,8 @@ kiegészítőt, akkor annak utána kell betöltődnie. Gyorsan el is mentem a
 [Require.js](http://requirejs.org/) oldalára, de mire betöltődött már fel is fogtam,
 hogy nem akarom ezzel is lassítani a rendszert. Csak azért, hogy a jelenlegi alacsony
 számú fájlomat kezeljem felesleges.
+
+{% include post/adsense_right.html %}
 
 Nem maradt más, mint a rekurzió. Imádom és talán őrültje is vagyok, mert ahol lehet
 használom. Lehet néhe nem kellene, de akkor is. Tehát mikor elsül az oldal onLoad eseménye,
