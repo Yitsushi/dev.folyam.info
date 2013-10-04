@@ -6,6 +6,7 @@
     var modules = {};
     return {
       delegate: function(name, callback) {
+        if (console) console.log('delegate', name);
         modules[name] = callback;
       },
       init: function() {
@@ -49,6 +50,7 @@
   });
 
   (function() {
+    if (console) console.log('Start');
     var javaScriptFiles = [
       '{{ root_url }}/javascripts/libs/jquery-1.9.1.min.js',
       '{{ root_url }}/javascripts/modernizr-2.0.js',
@@ -60,7 +62,7 @@
     function loadJavaScript(script, callback) {
       var element = document.createElement("script");
       element.src = script;
-      element.onload element.onerror = script.onreadystatechange = callback;
+      element.onload = element.onerror = script.onreadystatechange = callback;
       document.body.appendChild(element);
     }
     function loadNext(callback) {
@@ -79,10 +81,13 @@
     }
 
     if (window.addEventListener) {
+      if (console) console.log('addEventListener');
       window.addEventListener("load", downloadJSAtOnload, false);
     } else if (window.attachEvent) {
+      if (console) console.log('attachEvent');
       window.attachEvent("onload", downloadJSAtOnload);
     } else {
+      if (console) console.log('load Else');
       window.onload = downloadJSAtOnload;
     }
   }());
