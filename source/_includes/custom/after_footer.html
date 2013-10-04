@@ -54,8 +54,6 @@
       '{{ root_url }}/javascripts/modernizr-2.0.js',
       '{{ root_url }}/javascripts/ender.js',
       '{{ root_url }}/javascripts/octopress.js',
-      'https://apis.google.com/js/plusone.js',
-      'https://apis.google.com/js/client:plusone.js',
       'http://www.google.hu/coop/cse/brand?form=cse-search-box&lang=hu'
     ];
 
@@ -70,11 +68,13 @@
         return callback(null, true);
       }
       var current = javaScriptFiles.shift();
+      if (console) console.log('loadNext', current);
       loadJavaScript(current, function() {
         loadNext(callback);
       });
     }
     function downloadJSAtOnload() {
+      if (console) console.log('downloadJSAtOnload');
       loadNext(Application.init);
     }
 
