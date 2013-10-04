@@ -60,7 +60,7 @@
     function loadJavaScript(script, callback) {
       var element = document.createElement("script");
       element.src = script;
-      element.onload = script.onreadystatechange = callback;
+      element.onload element.onerror = script.onreadystatechange = callback;
       document.body.appendChild(element);
     }
     function loadNext(callback) {
