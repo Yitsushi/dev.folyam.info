@@ -105,6 +105,8 @@ div.answer {
 }
 ```
 
+{% include post/adsense_right.html %}
+
 Így máris jobban néz ki. Mit is csináltunk? Minden formelemet elrejtettünk, ami jelen
 esetben ugyebár a radio és a checkbox elemekre vonatkozik. Ezek után az `.answer` háttérképe
 legyen az a kép, ami akkor jelenik meg, ha nincs kijelölve az adott formelem. És most jön
@@ -179,6 +181,8 @@ Adjuk hozzá a css-hez az alábbi sorokat:
 
 Lényegében `hover` eseményre megjelenítűnk egy radiobutton listát, amiből választhat
 a kedves delikvensünk :)
+
+{% include post/adsense_right.html %}
 
 Természetesen egyszerűbb megoldás valami jó kis JavaScript segítséget kérni, mert rengeteg
 ilyen lib van, ami hasznos. Van ezek között szép is, meg van talán optimális is. :)
