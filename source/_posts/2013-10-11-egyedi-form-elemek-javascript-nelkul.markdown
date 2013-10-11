@@ -192,4 +192,4 @@ kategória. De sikerült és ez a lényeg.
 
 Az itt elkészültek
 [demó oldala itt érhető el](/downloads/code/2013-10-11-egyedi-form-elemek-javascript-nelkul/index.html)
-vagy [jsFiddle](http://jsfiddle.net/yitsushi/s82zj/1/)-n
+vagy [jsFiddle](http://jsfiddle.net/yitsushi/s82zj/)-n
