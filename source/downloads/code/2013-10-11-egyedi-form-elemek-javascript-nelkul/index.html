@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Custom form elements with CSS</title>
+      <style>
+        .custom-form-element {
+          display: block;
+          font-size: 32px;
+        }
+
+        .radio-element span {
+          width: 100px;
+        }
+
+        .custom-form-element span {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 0.8em;
+          line-height: 35px;
+        }
+
+        .custom-form-element input {
+          display: none;
+        }
+
+        .custom-form-element input + div.answer {
+          display: inline-block;
+          background-image: url(cross.png);
+        }
+        .custom-form-element input:checked + div.answer
+        {
+          background-image: url(accept.png);
+        }
+
+        div.answer {
+          width: 32px;
+          height: 32px;
+        }
+
+        .custom-form-element.select-element {
+          border: 1px solid;
+          padding: 5px;
+          width: 300px;
+        }
+
+        .custom-form-element.select-element:hover label span {
+          display: block;
+        }
+
+        .custom-form-element.select-element:hover input:checked + span {
+          background-color: #afa;
+        }
+
+        .custom-form-element.select-element:hover input + span:hover {
+          background-color: #ffa;
+        }
+        .custom-form-element.select-element .selector {
+          float: right;
+        }
+
+        .option-element input + span {
+          display: none;
+          cursor: pointer;
+        }
+
+        .option-element input:checked + span {
+          display: block;
+        }
+      </style>
+  </head>
+  <body>
+    <h2>Checkbox</h2>
+    <form>
+      <label class='custom-form-element'>
+        <span>Szeretsz dolgozni?</span>
+        <input type="checkbox" />
+        <div class='answer'></div>
+      </label>
+      <label class="custom-form-element">
+        <span>Kérsz hírlevelet?</span>
+        <input type="checkbox" />
+        <div class='answer'></div>
+      </label>
+    </form>
+    <hr />
+    <h2>Radio</h2>
+    <form>
+      <strong>Szeretsz dolgozni?</strong>
+      <label class='custom-form-element radio-element'>
+        <span>Igen</span>
+        <input type="radio" name="stuff" value="1" />
+        <div class='answer'></div>
+      </label>
+      <label class="custom-form-element radio-element">
+        <span>Nem</span>
+        <input type="radio" name="stuff" value="0" />
+        <div class='answer'></div>
+      </label>
+      <label class="custom-form-element radio-element">
+        <span>Talán</span>
+        <input type="radio" name="stuff" value="-1" />
+        <div class='answer'></div>
+      </label>
+    </form>
+    <hr />
+    <h2>Select</h2>
+    <form>
+      <div class="custom-form-element select-element">
+        <label class="selector">
+          <span>V</span>
+        </label>
+        <label class="custom-form-element option-element">
+          <input type="radio" name="stuff" checked />
+          <span>-- válassz egyet --</span>
+        </label>
+        <label class="custom-form-element option-element">
+          <input type="radio" name="stuff" value="1" />
+          <span>Igen</span>
+        </label>
+        <label class="custom-form-element option-element">
+          <input type="radio" name="stuff" value="0" />
+          <span>Nem</span>
+        </label>
+        <label class="custom-form-element option-element">
+          <input type="radio" name="stuff" value="-1" />
+          <span>Talán</span>
+        </label>
+      </div>
+    </form>
+  </body>
+</html>
