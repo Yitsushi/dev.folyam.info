@@ -4,10 +4,10 @@ title: "URL rövidítő 2. rész"
 date: 2013-03-28 07:26
 comments: true
 categories: [hogyan, javascript, node.js, angularjs, html]
-image: http://s3-dev.folyam.info/2013-03-28-url-rovidito-2-resz/tiny-cat-in-a-shell.jpg
+image: http://dev-folyam-info.storage.googleapis.com/2013-03-28-url-rovidito-2-resz/tiny-cat-in-a-shell.jpg
 ---
 
-{% img left http://s3-dev.folyam.info/2013-03-28-url-rovidito-2-resz/tiny-cat-in-a-shell.jpg 400 Node.js Hogyan %}
+{% img left http://dev-folyam-info.storage.googleapis.com/2013-03-28-url-rovidito-2-resz/tiny-cat-in-a-shell.jpg 400 Node.js Hogyan %}
 
 Egy jó ideje volt már annak, hogy kikerült az első fejezet. Most úgy döntöttem, hogy
 mindenképpen lesz rá időm, akármi jöhet közbe, ma készen lesz a második rész is. Mi

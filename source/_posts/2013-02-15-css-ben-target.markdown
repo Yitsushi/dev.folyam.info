@@ -4,10 +4,10 @@ title: "CSS-ben :target?"
 date: 2013-02-15 17:56
 comments: true
 categories: css
-image: http://s3-dev.folyam.info/2013-02-15-css-ben-target/gold.png
+image: http://dev-folyam-info.storage.googleapis.com/2013-02-15-css-ben-target/gold.png
 ---
 
-{% img center http://s3-dev.folyam.info/2013-02-15-css-ben-target/gold.png %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-02-15-css-ben-target/gold.png %}
 
 Egy css tulajdonság... Ami megváltoztat mindent?
 Mi is ez? Egészen pontosan a böngésző `location.hash` részét vizsgálja.

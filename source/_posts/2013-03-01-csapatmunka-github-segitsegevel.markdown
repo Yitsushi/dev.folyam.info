@@ -4,10 +4,10 @@ title: "Csapatmunka Github segítségével"
 date: 2013-03-01 09:07
 comments: true
 categories: [hogyan, github, csapatmunka]
-image: http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-preview.jpg
+image: http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-preview.jpg
 ---
 
-{% img left http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-preview.jpg Github Csapatmunka %}
+{% img left http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-preview.jpg Github Csapatmunka %}
 
 Ez a cikk eredetileg [+Sayanee Basu](https://plus.google.com/112065206911083904311)
 (Twitter: [@sayanee_](https://twitter.com/sayanee_)) munkája, amit a
@@ -90,7 +90,7 @@ Minden Github felhasználó ingyenesen létrehozhat szervezetet Open Source proj
 Ha létre szeretnél hozni egyet, akkor csak menj a
 [saját szervezetek beállításaihoz](https://github.com/settings/organizations).
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-create-org.png Github szervezet %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-create-org.png Github szervezet %}
 
 A csapatok oldalát egyszerűen el lehet érni a `http://github.com/organizations/[organization-name]/teams`
 címen, ha pedig újat szeretnél létrehozni, akkor azt megteheted a
@@ -104,7 +104,7 @@ a szerveren lévő repót. Írási/Olvasási jog.
 3. **Push, Pull & Administrative:** (1) és (2) + hozzáfér a számlázási adatokhoz, létrehozhat
 új csapatokat, de akár törölheti is a szervezetet. Olvasás + Írás + Adminisztrációs jogok.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-create-team.png Három jogosultsági szint %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-create-team.png Három jogosultsági szint %}
 
 ### Együttműködő (partner)
 
@@ -112,13 +112,13 @@ Ha van egy személyes repód, akkor bárkinek adhatsz **írási és olvasási jo
 felhasználóddal. Ha szeretnél hozzáadni valakit egy projektedhez, akkor látogass el a
 `https://github.com/[username]/[repo-name]/settings/collaboration` oldalra:
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-collaborator.png Csapattársak %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-collaborator.png Csapattársak %}
 
 Ha hozzáadtunk valakit, akkor láthatja az írható hozzáférési címet is a repóhoz. Ha
 valakinek van írási joga, akkor tud `git clone` parancs kiadása után dolgozni a projekten
 és a módosításait egyszerűen `git push`-al felküldeni a Github-ra.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-access.png Github jogosultságok %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-access.png Github jogosultságok %}
 
 ## Pull Requests
 
@@ -146,11 +146,11 @@ hogy lássuk a `Fork & Pull Model` működését:
 
 * Keressük meg a Github repót, amin szeretnénk dolgozni. Kattintsunk a "Fork" gombra:
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-fork.png Fork %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-fork.png Fork %}
 
 * Ez létrehoz egy teljes másolatot a saját felhasználónk alá:
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-forked.png Forkolt%}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-forked.png Forkolt%}
 
 * [Válasszuk ki az SSH URL-t](https://help.github.com/articles/why-is-git-always-asking-for-my-password),
 így az SSH kulcshoz tartozó jelszót fogja kérni _(és nem a Github felhasználónevet és
@@ -197,17 +197,17 @@ $ git push origin readme
 * A saját forkolt repónknál kiválasztjuk a frissen felküldött ágat és megnyomjuk a "Pull Request"
 gombot.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-request.png Github Pull Request %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-request.png Github Pull Request %}
 
 * Miután beküldtük a kérelmünket, megjelenünk az eredeti repó "pull requests" oldalán.
 Megjelenik mint "pull request" és mint "issue".
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-request-sent.png Github Pull Request: 1 commit %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-request-sent.png Github Pull Request: 1 commit %}
 
 * A változásokkal kapcsolatban történő beszélgetés végén kiderült, hogy bekerül az eredeti
 repóba mint újdonság vagy nem.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-request-2.png Github Pull Request: 2 commit %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-request-2.png Github Pull Request: 2 commit %}
 
 ### Pull Request beolvasztása
 
@@ -219,13 +219,13 @@ a beérkező módosításokat:
 meg kell bizonyosodni róla, hogy nincs semmilyen akadály. Tehát nincs `conflict` és készen
 áll az egybeolvasztásra. Csak egyszerűen rá kell kattintani a "Merge Pull Request" gombra:
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-merge.png Github Merge %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-merge.png Github Merge %}
 
 * **Beolvasztás lokális gépen:** Amennyiben vannak problémák a beolvasztással, ay "info"
 gomb megnyomására kiírja a Github, hogy pontosan hogyan lehet megoldani a beolvasztást
 lokális gépen.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-merge-conflict.png Github Merge Conflict %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-merge-conflict.png Github Merge Conflict %}
 
 Különböző modellek vannak az elágazások kezelésére (branching). Két legelterjedtebb a (1)
 [Github folyamat](http://scottchacon.com/2011/08/31/github-flow.html), ami egyszerűen új
@@ -256,13 +256,13 @@ ahogyan lezárunk egy jegyet.
 * **Keresni:** A kereső automatikus kiegészítéssel segít megtalálni a nekünk az éppen keresett
 mérföldkövet vagy jegyet.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-issue.png Hibakezelés %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-issue.png Hibakezelés %}
 
 * **Hozzá lehet rendelni valakihez:** Minden jegy hozzárendelhető egy emberhez, így lehet
 látni, hogy kinek mit kellene csinálnia, ki foglalkozik az üggyel és kit kell keresni, ha
 kérdés van vele kapcsolatban.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-issue-new.png Uj hiba felvitele %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-issue-new.png Uj hiba felvitele %}
 
 * **Automatikusan lezárhatóak:** Ha egy commit tartalmazza a `Fixes/Fixed` vagy
 `Close/Closes/Closed #[issue-number]` formát, akkor az `issue-number` azonosítójú jegy
@@ -274,13 +274,13 @@ $ git commit -m "corrected url. fixes #2"
 $ git push origin master
 ```
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-close.png Hiba automatikus lezárása %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-close.png Hiba automatikus lezárása %}
 
 * **Lehet említeni:** Bárhol létrehozható olyan megjegyzés, ami az adott jegyre mutat, ha
 használjuk a `#[issue-number]` formulát. Az ilyen karakterláncokból linket készít a rendszer,
 így gyorsan oda lehet jutni hozzájuk.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-mention.png Hiba megjelölése commit-ban %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-mention.png Hiba megjelölése commit-ban %}
 
 ## Analitika
 
@@ -301,7 +301,7 @@ töröltek.
 * **Code Frequency:** Hány sor lett commit-olva a projekt élete során?
 * **Punchcard:** Mely napokon és milyen időszakban milyen aktivitás van?
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-graphs.png Github grafikonok %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-graphs.png Github grafikonok %}
 
 ### Network
 
@@ -310,7 +310,7 @@ is egy nagyon hasznos segítség, mert lehet rajta látni, hogy hol milyen ágak
 tart, hol lettek összeolvasztva az ágak és ki honnan dolgozik, melyik ágból csinált magnának
 másolatot és hol szállt be. Minden ág, minden commit-ja  látható rajta.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-network.png Branch és Fork hálózat %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-network.png Branch és Fork hálózat %}
 
 ## Project Management
 
@@ -333,7 +333,7 @@ hozatni egy új kártyát, ha Pull Request érkezik. Nézzük hogyan!
 
 * Csináljunk egy Trello felhasználót, ha még nincs és hozzunk létre egy új táblát.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-trello.png Github + Trello %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-trello.png Github + Trello %}
 
 * Menjünk be Github-on a repónkhoz, ott `Settings` > `Service Hooks`, és válasszuk ki a Trello-t.
 * `TOKEN` kérhető az `Install Notes` alatti linken.
@@ -342,17 +342,17 @@ szerzett `TOKEN`-t kapunk egy `json` formátumú tartalmat. Ez megadja a listaaz
 minden kártyához. A `BOARDID` pedig beszerezhető, ha ellátogatunk az oldalra az adott
 táblához, fent az URL-ből, ami így néz ki: `https://trello.com/board/[BOARD-NAME]/[BOARDID]`.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-listid.png Trello list_id %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-listid.png Trello list_id %}
 
 * Vissza a Github hook-okhoz, töltsük ki a `list id` és a `token` mezőket.
 Állítsuk be, hogy az állapota `Active` legyen, majd nyomjunk egy `Test Hook` gombot, hogy
 lássuk működik-e.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-hook-trello-hooks.png Github hook beállítása Trello kapcsolathoz %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-hook-trello-hooks.png Github hook beállítása Trello kapcsolathoz %}
 
 * Mostantól automatikusan létrejön egy kártya, ha Pull kérelem jön.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-trello-update.png Automatikus frissítés %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-trello-update.png Automatikus frissítés %}
 
 ### Github és Pivotal Tracker
 
@@ -366,18 +366,18 @@ segíti a munkát és a tervezést. Ebben a rövid példában beállítjuk, hogy
 * Csináljunk egy új projektet a Pivotal Tracker-en egy új Sztorival, amit meg kellene
 csinálni.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-pivotal.png Github + Pivotal Tracker %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-pivotal.png Github + Pivotal Tracker %}
 
 * navigáljunk el a `Profile` > `API Token` (jobboldalt lent) oldalra. Másoljuk ki a kapott
 API tokent.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-tracker-token.png Token %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-tracker-token.png Token %}
 
 * Menjünk vissza a Github repóhoz, majd `Settings` > `Service Hooks` és keressük ki a
 `Pivotal Tracker`-t. Másoljuk be a kapott tokent, állítsuk be, hogy aktív legyen és
 kattintsunk az `Update settings` gombra. Mostantól össze van kötve a kettő.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-tracker-hook.png Github hook beállítása Pivotal Tracker-hez %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-tracker-hook.png Github hook beállítása Pivotal Tracker-hez %}
 
 * Végül csináljunk egy commit-ot úgy, hogy [a `tracker_id` is benne legyen](http://pivotallabs.com/level-up-your-development-workflow-with-github-pivotal-tracker/) a `git commit -m "message [delivers #tracker_id]"` formában.
 
@@ -391,7 +391,7 @@ $ git push
 státusza és bekerült egy link, amit a Github commit-ra visz minket, ahol láthatjuk a
 változásokat is.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-tracker-deliver.png Github commit a Pivotal Tracker-ben %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-tracker-deliver.png Github commit a Pivotal Tracker-ben %}
 
 Ezekben a példákban a Trello és Pivotal Tracker segítségével látható, hogy nagyon jól
 összeköthetőek a rendszerek és nagy segítség tud lenni. Sok időt meg tud spórolni már csak
@@ -473,23 +473,23 @@ node_js:
 * Most jelentkezzünk be a Travis-ba a Github felhasználónkkal és kapcsoljuk be a repó hook-ot
 a `repositories` fülön.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-travis-on.png Github + Travis CI %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-travis-on.png Github + Travis CI %}
 
 * Ha nem indul el a teszt, akkor manuálisan kell beállítani. A profil fülön másoljuk ki
 a token-ünket.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-travis-token.png Travic CI token %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-travis-token.png Travic CI token %}
 
 * Menjünk vissza Github-ra és aktiváljuk a Travis hook-ot bemásolva az imént megszerzett
 token-t.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-travis-hook.png Github hook beállítása Travis CI kapcsolathoz %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-travis-hook.png Github hook beállítása Travis CI kapcsolathoz %}
 
 * Első alkalommal egy `git push` kell, hogy elinduljon a folyamat. Ha minden rendben volt,
 akkor látogassunk el a `http://travis-ci.org/[username]/[repo-name]` oldalra, hogy
 lássuk a végeredményt.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-travis-pass.png Travis CI eredmények %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-travis-pass.png Travis CI eredmények %}
 
 ### Travis CI + Pull Requests
 
@@ -501,11 +501,11 @@ Nézzük is meg, hogy miként megy a folyamat.
 
 * Küldünk egy Pull Request-et és hagyjuk, hogy a Travis megmondja, működik-e vagy sem.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-pass.png Github Pull Request-ben látszódó Travis CI eredmények %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-pass.png Github Pull Request-ben látszódó Travis CI eredmények %}
 
 * Ha a módosításokkal hibásak a tesztek, akkor a Travis szól nekünk erről.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-fail.png Ha hiba van a Pull Request-ben, akkor az látszik %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-pull-fail.png Ha hiba van a Pull Request-ben, akkor az látszik %}
 
 * Ha a piros figyelmeztető gombra kattintunk, akkor az elnavigál minket a Travis oldalára,
 hogy lássuk, mi nem jó.
@@ -524,7 +524,7 @@ csak rámutassunk egy hibára, hibalehetőségre, jelezzük, hogy az adott kódo
 nem helyes adott projekten. A sorokhoz fűzött megjegyzéseket el lehet rejteni és meg lehet
 jeleníteni minden commit-nál a jobb felső sarokban lévő checkbox-al.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-inline.png Github commit adott sorához is hozzá lehet fűzni megjegyzést %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-inline.png Github commit adott sorához is hozzá lehet fűzni megjegyzést %}
 
 Nézzünk pár olyan URL mintát, ami segítheti a munkánkat. Először is, hogyan lehet
 lekérdezni két commit közötti különbséget?
@@ -533,11 +533,11 @@ lekérdezni két commit közötti különbséget?
 `https://github.com/[username]/[repo-name]/compare/[starting-SHA1]...[ending-SHA1]`.
 Hasonlóan működik ágakra _(branches)_ és címkékre _(tags)_ is.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-url.png Commit-ok összehasonlítása %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-url.png Commit-ok összehasonlítása %}
 
 * **Összehasonlítás felesleges szóközök nélkül** : Add hozzá az URL-hez a `?w=1` paramétert
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-whitespace.png Felesleges space-ek nélkül is megtekinthetőek a változások %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-whitespace.png Felesleges space-ek nélkül is megtekinthetőek a változások %}
 
 3. **Diff** : add hozzá a `.diff` kiterjesztést, hogy megkapd azt a formát, amit egy `git diff`
 is eredményezne. Hasznos lehet akkor, ha scriptelni szeretnéd a kimenetet.
@@ -568,7 +568,7 @@ Hogy létrehozz egy Wiki-t, szinte semmit se kell tenni, csak engedélyezni a be
 A Wiki-nek saját verziókövetése van és azt le lehet klónozni lokális gépre, akár csak magát
 a projekt repóját.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-wiki.png Github Wiki %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-wiki.png Github Wiki %}
 
 Egy nagyon haszos dolog, ha például `submodule`-ként hozzáadjuk a Github Wiki-t a forráskódhoz,
 így nem kell két repót karbantartani és nincs elszeparálva a kettő. Ahhoz, hogy ezt megtegyük,
@@ -598,7 +598,7 @@ $ git push origin master
 
 Innentől kezdve a dokumentáció ott van a forrás mellett, mint submodule.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-submodule.png Github Wiki mint Submodule %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-submodule.png Github Wiki mint Submodule %}
 
 ### Github Hubot
 
@@ -629,11 +629,11 @@ Ne problémázz azon, ha azt mondja az alkalmazás, hogy `Cannot GET /`, mert
 * A Hubot Campfire fiókjából hívjuk meg magunkat. Most jelentkezzünk be a saját fiókunkba,
 és írjuk be, hogy `Hubot help`. Hubot szépen le fogja írni, hogy milyen parancsok vannak.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-hubot.png Hubot help parancs, ami segít megtudni, hogy mit tudsz még csinálni %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-hubot.png Hubot help parancs, ami segít megtudni, hogy mit tudsz még csinálni %}
 
 * Ki is próbálhatsz párat, mint például `hubot ship it` vagy a `hubot map me CERN`.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-hubot-commands.png Hubot parancsok %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-hubot-commands.png Hubot parancsok %}
 
 * Következőnek, hozzá kell adnunk egy Hubot script-et.
 [Bőven van miből válogatni](https://github.com/github/hubot-scripts/tree/master/src/scripts)
@@ -653,11 +653,11 @@ Adjunk hozzá egy új `web hook`-ot és állítsuk be a
 `[HUBOT_URL]:[PORT]/hubot/gh-commits?room=[ROOM_ID]` címre, ahogyan a script is elmondja
 nekünk a fájl elején.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-hubot-hook.png Github hook beállítása Hubot kapcsolathoz %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-hubot-hook.png Github hook beállítása Hubot kapcsolathoz %}
 
 * Mostantól minden egyes commitról Hubot szólni fog a csevegőszobában.
 
-{% img center http://s3-dev.folyam.info/2013-03-01-csapatmunka-github-segitsegevel/github-team-hubot-ghcommit.png Github Commit megjelenik Hubot-nak köszönhetően %}
+{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-01-csapatmunka-github-segitsegevel/github-team-hubot-ghcommit.png Github Commit megjelenik Hubot-nak köszönhetően %}
 
 Nézz szét további [Github specifikus Hubot scriptek után](https://github.com/github/hubot-scripts)
 vagy ha gondolod, írj sajátot, amihez találhatsz

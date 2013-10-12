@@ -4,10 +4,10 @@ title: "Röviden tömören"
 date: 2013-02-15 15:09
 comments: true
 categories: general
-image: http://s3-dev.folyam.info/2013-02-15-roviden-tomoren/where-everything-begins.jpeg
+image: http://dev-folyam-info.storage.googleapis.com/2013-02-15-roviden-tomoren/where-everything-begins.jpeg
 ---
 
-{% img left http://s3-dev.folyam.info/2013-02-15-roviden-tomoren/where-everything-begins.jpeg 240 "Valahol újra kell kezdeni" %}
+{% img left http://dev-folyam-info.storage.googleapis.com/2013-02-15-roviden-tomoren/where-everything-begins.jpeg 240 "Valahol újra kell kezdeni" %}
 
 Sokkal tartozom nektek, mert jó pár dolog volt, amire mondtam, hogy írok róla, csak majd később.
 Erőt vettem magamon és miután rájöttem, hogy soha nem lesz időm ennyi videótartalom legyártásához,
