@@ -4,7 +4,7 @@ title: "Weboldal Google Drive-ból"
 date: 2013-02-17 00:02
 comments: true
 categories: [google, html, tricks, hogyan]
-image: http://dev-folyam-info.storage.googleapis.com/2013-02-17-weboldal-google-drive-bol/open-with-preview.png
+image: http://dev-gcs.folyam.info/2013-02-17-weboldal-google-drive-bol/open-with-preview.png
 ---
 
 Végre eljött az idő. Hasonlóan, mint [Dropbox](https://www.dropbox.com/home)-nál,
@@ -26,19 +26,19 @@ könyvtárat és állítsuk be a jogait úgy, hogy mindenki láthassa, azaz publ
 létre a kívánt tartalmat. Jelen esetben egy HTML fájlt. Töltsük fel, vagy hozzuk egyből
 ott létre.
 
-{% img center http://dev-folyam-info.storage.googleapis.com/2013-02-17-weboldal-google-drive-bol/new-text-document.png "Új fájl létrehozása" %}
+{% img center http://dev-gcs.folyam.info/2013-02-17-weboldal-google-drive-bol/new-text-document.png "Új fájl létrehozása" %}
 
 Nyissuk meg a fájlt a Google Drive Viewer _(Google Drive - Megtekintő)_ használatával.
 
-{% img center http://dev-folyam-info.storage.googleapis.com/2013-02-17-weboldal-google-drive-bol/open-with-preview.png "Előnézet" %}
+{% img center http://dev-gcs.folyam.info/2013-02-17-weboldal-google-drive-bol/open-with-preview.png "Előnézet" %}
 
 Itt megjelent egy Preview _(Előnézet)_ gomb, amit megnyomva megkapjuk a nyers fájlt.
 
-{% img center http://dev-folyam-info.storage.googleapis.com/2013-02-17-weboldal-google-drive-bol/check-the-output.png "Nyers fájl" %}
+{% img center http://dev-gcs.folyam.info/2013-02-17-weboldal-google-drive-bol/check-the-output.png "Nyers fájl" %}
 
 Innentől kezdve már csak az URL-t kell kimásolni és kész is.
 
-{% img center http://dev-folyam-info.storage.googleapis.com/2013-02-17-weboldal-google-drive-bol/copy-the-url.png "Elérési út" %}
+{% img center http://dev-gcs.folyam.info/2013-02-17-weboldal-google-drive-bol/copy-the-url.png "Elérési út" %}
 
 Viszonylag egyszerű. A legnagyobb buktatója, ahol én is elvéreztem először, az a tartalmazó
 könyvtár. Annak is publikusnak kell lennie, különben 404 hibát kaptam.

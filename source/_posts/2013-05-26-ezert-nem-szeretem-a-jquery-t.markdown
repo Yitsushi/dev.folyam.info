@@ -4,10 +4,10 @@ title: "Ezért nem szeretem a jQuery-t"
 date: 2013-05-26 14:35
 comments: true
 categories: [javascript, recommended, tricks, sucks]
-image: http://dev-folyam-info.storage.googleapis.com/2013-05-26-ezert-nem-szeretem-a-jquery-t/tmnt-competition.jpg
+image: http://dev-gcs.folyam.info/2013-05-26-ezert-nem-szeretem-a-jquery-t/tmnt-competition.jpg
 ---
 
-{% img center http://dev-folyam-info.storage.googleapis.com/2013-05-26-ezert-nem-szeretem-a-jquery-t/tmnt-competition.jpg %}
+{% img center http://dev-gcs.folyam.info/2013-05-26-ezert-nem-szeretem-a-jquery-t/tmnt-competition.jpg %}
 
 Mikor szóba kerül a jQuery, akkor majdnem mindig megkérdezik, hogy miért nem szeretem.
 Sok oka van, de a teljesítmény talán a legszembetűnőbb. Mivel a helyszínen sokszor nem

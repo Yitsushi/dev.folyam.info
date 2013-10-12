@@ -4,10 +4,10 @@ title: "Google+ és Google API kapcsolat"
 date: 2013-03-20 1:08
 comments: true
 categories: [google+, api, google, javascript, hogyan]
-image: http://dev-folyam-info.storage.googleapis.com/2013-03-20-google-plus-es-google-api-kapcsolat/sign-in-button.jpg
+image: http://dev-gcs.folyam.info/2013-03-20-google-plus-es-google-api-kapcsolat/sign-in-button.jpg
 ---
 
-{% img left http://dev-folyam-info.storage.googleapis.com/2013-03-20-google-plus-es-google-api-kapcsolat/sign-in-button.jpg Google+ Sign-In Button %}
+{% img left http://dev-gcs.folyam.info/2013-03-20-google-plus-es-google-api-kapcsolat/sign-in-button.jpg Google+ Sign-In Button %}
 
 Már egy ideje megjelent a [Google Login](https://developers.google.com/accounts/docs/GettingStarted)
 mellett a [Google+ Sign In](https://developers.google.com/+/features/sign-in) is. Kicsit
@@ -175,18 +175,18 @@ Miután az alkalmazásod használja a Google+ Sign In rendszerét és össze is 
 Google+ Oldaladat az alkalmazással, a Google API Console felületén, megjelenik egy új
 menüpont a Google+ Oldalad adminisztrációs részén.
 
-{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-20-google-plus-es-google-api-kapcsolat/connected-services.png Connected Services %}
+{% img center http://dev-gcs.folyam.info/2013-03-20-google-plus-es-google-api-kapcsolat/connected-services.png Connected Services %}
 
 Mi van itt? Láthatod, hogy mennyien jelentkeztek be a rendszeredbe az alkalmazásodon
 keresztül és mennyi ebből az új.
 
-{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-20-google-plus-es-google-api-kapcsolat/sign-in-activity.png Sign-In Activity %}
+{% img center http://dev-gcs.folyam.info/2013-03-20-google-plus-es-google-api-kapcsolat/sign-in-activity.png Sign-In Activity %}
 
 Továbbá az előbb említettem, hogy az interaktív posztoknak van azért előnye is. Itt láthatod,
 hogy mennyi interaktív megosztás született, mennyien látták azokat és abból mennyi
 átkattintás volt. No kérem ez viszont tényleg jól néz ki.
 
-{% img center http://dev-folyam-info.storage.googleapis.com/2013-03-20-google-plus-es-google-api-kapcsolat/interactive-posts.png Interactive Posts %}
+{% img center http://dev-gcs.folyam.info/2013-03-20-google-plus-es-google-api-kapcsolat/interactive-posts.png Interactive Posts %}
 
 Mivel a képen létható oldalnál még nincs semmi, amit interaktívan meg lehetne osztani
 _(sőt semmilyen interaktivitás nincs rajta... egyelőre)_ így minden érték nullán áll ezen

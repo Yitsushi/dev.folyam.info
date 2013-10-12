@@ -4,10 +4,10 @@ title: "OpenSource, de miért?"
 date: 2013-05-13 12:09
 comments: true
 categories: [opensource, csapatmunka, general]
-image: http://dev-folyam-info.storage.googleapis.com/2013-05-13-opensource-de-miert/opensourcequestion.jpg
+image: http://dev-gcs.folyam.info/2013-05-13-opensource-de-miert/opensourcequestion.jpg
 ---
 
-{% img left http://dev-folyam-info.storage.googleapis.com/2013-05-13-opensource-de-miert/opensourcequestion.jpg 300 Nyílt forrás? %}
+{% img left http://dev-gcs.folyam.info/2013-05-13-opensource-de-miert/opensourcequestion.jpg 300 Nyílt forrás? %}
 
 A nyílt forrást manapság azért szerencsére kezd elterjedni. Sokan még mindig félnek tőle,
 de egyre több cég nyitja meg szoftverének forrását. Vagy egy részét vagy egy régebbi

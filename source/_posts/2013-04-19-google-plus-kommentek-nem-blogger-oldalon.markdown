@@ -4,10 +4,10 @@ title: "Google+ kommentek nem Blogger oldalon"
 date: 2013-04-19 09:07
 comments: true
 categories: [google+, google, api, hogyan, tricks, javascript]
-image: http://dev-folyam-info.storage.googleapis.com/2013-04-19-google-plus-kommentek-nem-blogger-oldalon/googleplus-comments.png
+image: http://dev-gcs.folyam.info/2013-04-19-google-plus-kommentek-nem-blogger-oldalon/googleplus-comments.png
 ---
 
-{% img left http://dev-folyam-info.storage.googleapis.com/2013-04-19-google-plus-kommentek-nem-blogger-oldalon/googleplus-comments.png 400 Google+ Comments on your non-Blogger site %}
+{% img left http://dev-gcs.folyam.info/2013-04-19-google-plus-kommentek-nem-blogger-oldalon/googleplus-comments.png 400 Google+ Comments on your non-Blogger site %}
 
 Tegnap megjelent a [Google+ Comments](http://googleblog.blogspot.hu/), ami egyelőre csak a
 [Blogger](http://www.blogger.com/) rendszerében aktiválható elvileg. Mikor leültem tegnap

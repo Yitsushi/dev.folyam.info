@@ -4,10 +4,10 @@ title: "Hogyan lett 10 ponttal jobb a Mobile PageSpeed?"
 date: 2013-09-24 23:36
 comments: true
 categories: [javascript, recommended, tricks]
-image: http://dev-folyam-info.storage.googleapis.com/2013-09-24-hogyan-lett-10-ponttal-jobb-a-mobile-pagespeed/DevSpeedUp.png
+image: http://dev-gcs.folyam.info/2013-09-24-hogyan-lett-10-ponttal-jobb-a-mobile-pagespeed/DevSpeedUp.png
 ---
 
-{% img left http://dev-folyam-info.storage.googleapis.com/2013-09-24-hogyan-lett-10-ponttal-jobb-a-mobile-pagespeed/DevSpeedUp.png 300 Dev SpeedUp %}
+{% img left http://dev-gcs.folyam.info/2013-09-24-hogyan-lett-10-ponttal-jobb-a-mobile-pagespeed/DevSpeedUp.png 300 Dev SpeedUp %}
 
 Manapság a mobil netezők száma igen nagy, ezért fontos, hogy gyorsan töltődjön be az
 oldal. Mobil felületen még inkább szembetűnő, ha nem gyors a weboldal. Ott jobban fáj
@@ -206,7 +206,7 @@ Az összes képet, amit feltoltam a cikkekhez S3-ra optimalizáltattam az
 [ImageOptim](http://imageoptim.com/) nevű ingyenes alkalmazással. Így nagyon sokat
 spóroltam az adatmennyiséggel.
 
-{% img center http://dev-folyam-info.storage.googleapis.com/2013-09-24-hogyan-lett-10-ponttal-jobb-a-mobile-pagespeed/imageoptim.png ImageOptim %}
+{% img center http://dev-gcs.folyam.info/2013-09-24-hogyan-lett-10-ponttal-jobb-a-mobile-pagespeed/imageoptim.png ImageOptim %}
 
 Így végül elértem _(Heroku ingyenes használattal belassíthatja néha neki)_ a 91/95 pontos
 éréket is. Így végülis 20 pont növekedést értem el vele. De a cikk elsősorban a JavaScript

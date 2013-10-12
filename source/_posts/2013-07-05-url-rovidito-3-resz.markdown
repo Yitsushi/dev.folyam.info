@@ -4,10 +4,10 @@ title: "URL rövidítő 3. rész"
 date: 2013-07-05 19:31
 comments: true
 categories: [angularjs, hogyan, html, javascript, node.js]
-image: http://dev-folyam-info.storage.googleapis.com/2013-07-05-url-rovidito-3-resz/image.png
+image: http://dev-gcs.folyam.info/2013-07-05-url-rovidito-3-resz/image.png
 ---
 
-{% img left http://dev-folyam-info.storage.googleapis.com/2013-07-05-url-rovidito-3-resz/image.png 300 %}
+{% img left http://dev-gcs.folyam.info/2013-07-05-url-rovidito-3-resz/image.png 300 %}
 
 Ugye szeretnénk csinálni egy URL rövidítő alkalmazást. Nincs ezzel semmi baj, mert
 azt mindenki szeret csinálni. Leginkább azért, mert mindenki más ToDo alkalmazásokat csinál :)

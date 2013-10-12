@@ -4,10 +4,10 @@ comments: true
 date: 2013-02-21 00:48
 title: Google+ beágyazása Octopress-be
 categories: [ google+, octopress, plugin ]
-image: http://dev-folyam-info.storage.googleapis.com/2013-02-21-googleplus-beagyazasa-octopress-be/octopress.png
+image: http://dev-gcs.folyam.info/2013-02-21-googleplus-beagyazasa-octopress-be/octopress.png
 ---
 
-{% img right http://dev-folyam-info.storage.googleapis.com/2013-02-21-googleplus-beagyazasa-octopress-be/octopress.png "Octopress" %}
+{% img right http://dev-gcs.folyam.info/2013-02-21-googleplus-beagyazasa-octopress-be/octopress.png "Octopress" %}
 
 Ezzel a bejegyzéssel tesztelem, az [Octopress](http://octopress.org/) kiegészítőmet
 [Google+](https://plus.google.com/)-hoz. A lényege az, hogy a bejegyzésbe beraksz

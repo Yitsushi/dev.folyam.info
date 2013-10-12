@@ -4,10 +4,10 @@ title: "Android + css:font-family"
 date: 2013-02-24 00:03
 comments: true
 categories: [css, sucks]
-image: http://dev-folyam-info.storage.googleapis.com/2013-02-24-android-plus-css-font-family/pt_sans.jpeg
+image: http://dev-gcs.folyam.info/2013-02-24-android-plus-css-font-family/pt_sans.jpeg
 ---
 
-{% img left http://dev-folyam-info.storage.googleapis.com/2013-02-24-android-plus-css-font-family/pt_sans.jpeg 190 "PT Sans" %}
+{% img left http://dev-gcs.folyam.info/2013-02-24-android-plus-css-font-family/pt_sans.jpeg 190 "PT Sans" %}
 
 Hogyan is működik a CSS-ben a `font-family`? Megadsz jópár fontot, amit használni szeretnél.
 Ha az első, amit megadtál, nem jó, akkor a böngésző használja a másodikat, és ha az sem jó,
