@@ -4,10 +4,10 @@ title: "Egyedi form elemek JavaScript nélkül"
 date: 2013-10-11 16:20
 comments: true
 categories: [css, form, tricks]
-image: http://s3-dev.folyam.info.s3.amazonaws.com/2013-10-11-egyedi-form-elemek-javascript-nelkul/css-bitches.jpg
+image: http://dev-folyam-info.storage.googleapis.com/2013-10-11-egyedi-form-elemek-javascript-nelkul/css-bitches.jpg
 ---
 
-{% img left http://s3-dev.folyam.info.s3.amazonaws.com/2013-10-11-egyedi-form-elemek-javascript-nelkul/css-bitches.jpg CSS, Please bitches %}
+{% img left http://dev-folyam-info.storage.googleapis.com/2013-10-11-egyedi-form-elemek-javascript-nelkul/css-bitches.jpg CSS, Please bitches %}
 
 Bizonyára mindenki találkozott már azzal, hogy egy kedves munkatárs úgy dönt, hogy az
 oldalon minden form legyen egyedi megjelenésű. Ez minden programozó álma, főleg, amikor
