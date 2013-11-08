@@ -50,7 +50,7 @@ függvényünkkel:
 var myArray = ["Ez", "egy", "tömb."];
 
 myArray.forEach(function(item) {
-  if (myArray[i].length > 2) {
+  if (item.length > 2) {
     // A console.log a paramétereit szóközzel összefűzve írja ki.
     console.log("Itt egy hosszú szó:", item);
   }
@@ -62,7 +62,7 @@ De akár kitehetjük külön függvénybe is, ha a műveletet többször szeretn
 ``` javascript
 
 var logIfLongWord = function(word) {
-  if (myArray[i].length > 2) {
+  if (word.length > 2) {
     // A console.log a paramétereit szóközzel összefűzve írja ki.
     console.log("Itt egy hosszú szó:", word);
   }
