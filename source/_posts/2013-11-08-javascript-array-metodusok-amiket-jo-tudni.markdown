@@ -171,9 +171,12 @@ Sokkal, de sokkal szebb :)
 
 Ez egy érdekes függvény. Ennek a kimenete igaz vagy hamis. A jól megszokott `callback`,
 ami megkapja a három paramétert, használat van itt is érvényben. Sőt nagyon hasonló
-a `filter`-hez, annyi különbséggel, hogy a nem a `true` visszatérésű elemeleket pakolja
-be a kimeneti tömbbe, hanem ha minden _(every)_ `callback` igaz értékkel tért vissza,
-akkor igaz, minden más esetben hasmis lesz a kimeneti érték.
+a `filter`-hez, annyi különbséggel, hogy nem a `true` visszatérésű elemeleket pakolja
+be a kimeneti tömbbe.
+
+Ha minden _(every)_ `callback` igaz értékkel tért vissza,
+akkor igaz, minden más esetben hasmis lesz a kimeneti érték. Bár a lenti példa elég
+bugyuta, de arra jó, hogy látható legyen a működése.
 
 ``` javascript
 var me = { "id": 9 },
