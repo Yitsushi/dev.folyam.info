@@ -3,7 +3,7 @@ layout: post
 title: "Array metódusok, amiket jó tudni"
 date: 2013-11-08 10:34
 comments: true
-categories: [javascript]
+categories: [javascript, recommended]
 image: http://dev-gcs.folyam.info/2013-11-08-javascript-array-metodusok-amiket-jo-tudni/javascript.png
 ---
 
