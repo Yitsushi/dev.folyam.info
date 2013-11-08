@@ -51,7 +51,7 @@ var myArray = ["Ez", "egy", "tömb."];
 
 myArray.forEach(function(item) {
   // A console.log a paramétereit szóközzel összefűzve írja ki.
-  console.log("Itt egy hosszú szó:", myArray[i]);
+  console.log("Itt egy hosszú szó:", item);
 });
 ```
 
@@ -61,7 +61,7 @@ De akár kitehetjük külön függvénybe is, ha a műveletet többször szeretn
 
 var logIfLongWord = function(word) {
   // A console.log a paramétereit szóközzel összefűzve írja ki.
-  console.log("Itt egy hosszú szó:", myArray[i]);
+  console.log("Itt egy hosszú szó:", word);
 };
 
 myArray.forEach(logIfLongWord);
