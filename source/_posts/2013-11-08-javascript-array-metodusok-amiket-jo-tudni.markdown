@@ -11,7 +11,7 @@ image: http://dev-gcs.folyam.info/2013-11-08-javascript-array-metodusok-amiket-j
 
 Ha valaki foglalkozott már egy kicsit is [JavaScript](/blog/categories/javascript/)-el,
 az legalább egy ciklust írt. A tömbök _(array)_ nagyon fontos elemei szinte minden
-nyelven _(már amennyiben létezik)_.
+nyelvnek _(már amennyiben létezik)_.
 
 De vajon kihasználjuk a tudását és nem írunk feleslegesen ciklustokba ágyazott cilusokat,
 amik csak azért vannak, hogy egy másik tömböt felépítsünk vagy egy változó értékét
