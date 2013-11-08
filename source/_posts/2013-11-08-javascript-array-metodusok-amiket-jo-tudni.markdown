@@ -50,8 +50,10 @@ függvényünkkel:
 var myArray = ["Ez", "egy", "tömb."];
 
 myArray.forEach(function(item) {
-  // A console.log a paramétereit szóközzel összefűzve írja ki.
-  console.log("Itt egy hosszú szó:", item);
+  if (myArray[i].length > 2) {
+    // A console.log a paramétereit szóközzel összefűzve írja ki.
+    console.log("Itt egy hosszú szó:", item);
+  }
 });
 ```
 
@@ -60,8 +62,10 @@ De akár kitehetjük külön függvénybe is, ha a műveletet többször szeretn
 ``` javascript
 
 var logIfLongWord = function(word) {
-  // A console.log a paramétereit szóközzel összefűzve írja ki.
-  console.log("Itt egy hosszú szó:", word);
+  if (myArray[i].length > 2) {
+    // A console.log a paramétereit szóközzel összefűzve írja ki.
+    console.log("Itt egy hosszú szó:", word);
+  }
 };
 
 myArray.forEach(logIfLongWord);
