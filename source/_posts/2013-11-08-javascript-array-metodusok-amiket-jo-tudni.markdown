@@ -35,6 +35,8 @@ for (var i = 0, _l = myArray.length; i < _l; i++) {
 }
 ```
 
+{% include post/adsense_right.html %}
+
 Erre bizony van a tömböknek saját függvényük, amiket nyugodtan lehet használni. A `forEach`
 pont arra való, amit a neve is mutat. Végighalad az összes elemen. Egy hátránya van:
 Nem lehet belőle kilépni, tehát itt nincs `break`. Továbbmenni egyszerűen egy `return`-el
@@ -164,6 +166,8 @@ var myNumbers = [4, -16, 3, -4, 5, 6, 2, -5, -10],
 Sokkal, de sokkal szebb :)
 
 ### Array.every
+
+{% include post/adsense_right.html %}
 
 Ez egy érdekes függvény. Ennek a kimenete igaz vagy hamis. A jól megszokott `callback`,
 ami megkapja a három paramétert, használat van itt is érvényben. Sőt nagyon hasonló
