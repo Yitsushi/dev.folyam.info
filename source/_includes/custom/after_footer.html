@@ -2,6 +2,9 @@
   Add content to be output at the bottom of each page. (You might use this for analytics scripts, for example)
 {% endcomment %}
 <script type="text/javascript">
+  var adroll_adv_id, adroll_pix_id,
+      __adroll_loaded = false;
+
   var Application = (function() {
     var modules = {};
     return {
@@ -62,9 +65,9 @@
   });
 
   Application.delegate('adroll', function() {
-    var adroll_adv_id = "WYJHGRJBO5AXDDNY7CCWBG";
-    var adroll_pix_id = "KXUPQZKSNRGVNIIQVSIP37";
-    var __adroll_loaded=true;
+    adroll_adv_id = "WYJHGRJBO5AXDDNY7CCWBG";
+    adroll_pix_id = "KXUPQZKSNRGVNIIQVSIP37";
+    __adroll_loaded=true;
     var scr = document.createElement("script");
     var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
     scr.setAttribute('async', 'true');
